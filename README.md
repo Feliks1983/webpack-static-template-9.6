@@ -1,0 +1,1 @@
+# webpack-static-template-ru-9.6

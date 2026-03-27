@@ -35,18 +35,15 @@
 }
 
 .swiper-wrapper {
-  width: 240px;
-  height: 72px;
-  margin-left: 0px;
-  margin-top: 0px;
-}
-
-.brends-wrapper {
   display: flex;
   width: 240px;
   height: 72px;
   @include margin-left_top;
   gap: 16px;
+}
+
+.brends-wrapper {
+
 }
 
 .brends-slide {
@@ -79,7 +76,7 @@
   opacity: 1;
 }
 
-.swiper-pagination {
+.brends-pagination {
   width: 204px;
   height: 12px;
   margin-top: 0px;

@@ -115,12 +115,12 @@ tehnikaReadmore.addEventListener('click', function () {
   tehnikaReadmoreText.innerHTML = isHidden ? 'Скрыть' : 'Показать все'
 })
 
-const swiper = new Swiper('.brends-swiper', {
+const swiper1 = new Swiper('.brends-swiper', {
   slidesPerView: 2,
   spaceBetween: 16,
 
   pagination: {
-    el: '.swiper-pagination',
+    el: '.brends-pagination',
     clickable: true
   }
 })
@@ -130,7 +130,7 @@ const swiper2 = new Swiper('.tehnika-swiper', {
   spaceBetween: 16,
 
   pagination: {
-    el: '.swiper-pagination',
+    el: '.tehnika-pagination',
     clickable: true
   }
 })
@@ -140,7 +140,7 @@ const swiper3 = new Swiper('.cens-swiper', {
   spaceBetween: 16,
 
   pagination: {
-    el: '.swiper-pagination',
+    el: '.cens-pagination',
     clickable: true
   }
 })

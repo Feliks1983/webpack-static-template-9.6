@@ -106,11 +106,11 @@ tehnikaReadmore.addEventListener('click', function () {
   });
   tehnikaReadmoreText.innerHTML = isHidden ? 'Скрыть' : 'Показать все';
 });
-var swiper = new _bundle["default"]('.brends-swiper', {
+var swiper1 = new _bundle["default"]('.brends-swiper', {
   slidesPerView: 2,
   spaceBetween: 16,
   pagination: {
-    el: '.swiper-pagination',
+    el: '.brends-pagination',
     clickable: true
   }
 });
@@ -118,7 +118,7 @@ var swiper2 = new _bundle["default"]('.tehnika-swiper', {
   slidesPerView: 2,
   spaceBetween: 16,
   pagination: {
-    el: '.swiper-pagination',
+    el: '.tehnika-pagination',
     clickable: true
   }
 });
@@ -126,7 +126,7 @@ var swiper3 = new _bundle["default"]('.cens-swiper', {
   slidesPerView: 2,
   spaceBetween: 16,
   pagination: {
-    el: '.swiper-pagination',
+    el: '.cens-pagination',
     clickable: true
   }
 });

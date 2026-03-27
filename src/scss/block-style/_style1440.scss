@@ -1,4 +1,4 @@
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1120px) {
   .main-sidebar {
     display: none;
   }
@@ -108,8 +108,3 @@
   @import './content/main-footer';
 }
 
-@media screen and (max-width: 1440px) {
-  .content {
-    display: none;
-  }
-}

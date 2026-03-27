@@ -36,7 +36,7 @@
 
   .tehnika-wrapper {
     display: flex;
-    width: 288px;
+    width: 576px;
     height: 190px;
     opacity: 1;
     @include margin-left_top;
@@ -68,7 +68,7 @@
     margin-left: 0px;
   }
 
-  .swiper-pagination{
+  .tehnika-pagination{
     display: block;
     width: 204px;
     height: 12px;

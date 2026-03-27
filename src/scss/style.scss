@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'TT Lakes';
+  src: url('../fonts/TTLakes-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'TT Lakes';
+}
+
+@import './block-style/_color.scss';
+@import './block-style/_mixin.scss';
+@import './block-style/_style320.scss';
+@import './block-style/_style360.scss';
+@import './block-style/_style1440.scss';
+
+

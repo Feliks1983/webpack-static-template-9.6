@@ -1,0 +1,88 @@
+.menu__list {
+  width: 320px;
+  height: auto;
+  margin-top: 22px;
+  margin-left: 0px;
+  opacity: 1;
+  padding-bottom: 32px;
+}
+
+.menu__item {
+  @include import-flex_column;
+  width: 320px;
+  height: 364px;
+  margin-top: 0px;
+  margin-left: 8px;
+  gap: 24px;
+  @include font-size_16;
+}
+
+  .active-span {
+    display: flex;
+    align-items: center;
+    @include margin-left_top;
+    border-left: 4px solid $color-41f;
+    opacity: 1;
+    color: #7E7E82;
+    width: 214px;
+  }
+
+  .menu__item__span {
+    padding-left: 12px;
+  }
+
+.menu__contact {
+  @include flex-wrap_direction;
+  width: 196px;
+  height: 124px;
+  margin-top: 0px;
+  margin-left: 16px;
+  opacity: 1;
+}
+
+.menu__contact__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-top: 268px;
+  margin-right: auto;
+  opacity: 1;
+  @include border_bg;
+}
+
+.menu__span__mail {
+  width: 106px;
+  height: 24px;
+  margin-top: 16px;
+  margin-left: 0px;
+  opacity: 1;
+  @include font-size_16;
+}
+
+.menu__span__tell {
+  width: 196px;
+  height: 32px;
+  margin-top: 12px;
+  margin-left: 0px;
+  opacity: 1;
+  @include font-size_24;
+}
+
+.menu__lang {
+  margin-top: 8px;
+  margin-left: 0px;
+}
+
+.menu__lang span {
+  width: 24px;
+  height: 24px;
+  @include margin-left_top;
+  opacity: 1;
+  @include font-size_16;
+}
+
+.main__section__remove {
+  display: block;
+}

@@ -1,0 +1,48 @@
+
+  .main-list {
+    display: flex;
+    gap: 36px;
+    align-items: flex-start;
+    margin-top: 16.22px;
+    margin-left: 0px;
+    width: 1120px;
+    height: 307px;
+  }
+
+  .main-group__content-text {
+    width: auto;
+    height: 160px;
+    margin-left: 32px;
+  }
+
+  .main-group__long-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: $black-name;
+  }
+
+  .main-group__readmore {
+    display: flex;
+    align-items: center;
+    width: 132px;
+    height: 24px;
+  }
+
+  .main-group__readmore-expand {
+    width: 24px;
+    height: 24px;
+  }
+
+  .main-group__readmore-text {
+    @include font-size_16;
+    color: $black-name;
+  }
+
+  .main-group__picture {
+    width: 531.35px;
+    height: 307px;
+    border-radius: 6px;
+    margin-right: 28.65px;
+  }

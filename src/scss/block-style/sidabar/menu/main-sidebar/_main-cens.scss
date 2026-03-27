@@ -1,0 +1,119 @@
+.main-cens {
+  width: 584px;
+  height: 507.98px;
+  opacity: 1;
+  @include margin-left_top;
+}
+
+.cens-text {
+  width: 328px;
+  height: 56px;
+  opacity: 1;
+  @include margin-left_top;
+  border-bottom: 1px solid $color-d9f;
+  background: linear-gradient(270deg, $color-f8 0%, $color-f 98.61%);
+}
+
+.cens-text span {
+  width: 312px;
+  height: 24px;
+  opacity: 1;
+  margin-top: 16px;
+  margin-left: 16px;
+  @include font-weight_size-16;
+  text-transform: uppercase;
+  color: $color-7e;
+}
+
+.main-cens {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  gap: 16px;
+  margin-top: 24px;
+  width: 100vw;
+  height: 508px;
+}
+
+.cens-swiper {
+  width: 536px;
+  height: 200px;
+}
+
+.swiper-wrapper {
+  width: 260px;
+  height: auto;
+}
+
+.cens-group {
+  display: flex;
+  width: 260px;
+  height: 200px;
+}
+
+.cens-card {
+  width: 260px;
+  height: 200px;
+  opacity: 1;
+  margin-left: 16px;
+  margin-top: 16px;
+}
+
+.cens-list {
+  @include import-flex_column;
+  width: 228px;
+  height: 168px;
+  opacity: 1;
+  @include margin-left_top;
+  gap: 16px;
+}
+
+.cens-item {
+  @include import-flex_column;
+}
+
+.cens-item__group {
+  display: flex;
+  width: 228px;
+  height: 38px;
+  gap: 28px;
+}
+
+.cens-item__list {
+  @include import-flex_column;
+  width: 81px;
+  height: 38px;
+  @include margin-left_top;
+  opacity: 1;
+}
+
+.cens-item__list span + span {
+  display: flex;
+  width: 100px;
+  height: 18px;
+  @include margin-left_top;
+  opacity: 1;
+}
+
+.cens-button {
+  display: flex;
+  align-items: center;
+  width: 119px;
+  height: 32px;
+  opacity: 1;
+  margin-top: 0px;
+  margin-left: 0px;
+  border-radius: 16px;
+  padding-left: 12px;
+  background: $color-ff3;
+  color: $color-f;
+}
+
+.swiper-pagination {
+  display: block;
+  width: 204px;
+  height: 12px;
+  margin-top: 16px;
+  margin-left: 0px;
+  background: $color-f;
+  gap: 4px;
+}

@@ -1,0 +1,824 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="icon" href="data:;base64,=" />
+  </head>
+  <body>
+    <div class="services">
+      <div class="sidebar">
+        <div class="menu">
+          <div class="menu__button">
+            <div class="button__burger-block">
+              <button class="menu__button__burger-menu hover">
+                <img src="./img/burger-menu.svg" alt="burger-menu" />
+              </button>
+            </div>
+            <div class="button__burger-none">
+              <button class="menu__button__burger hover">
+                <img src="./img/burger.svg" alt="burger" />
+              </button>
+            </div>
+            <button class="menu__button__group hover">
+              <img src="./img/Group.svg" alt="Group" />
+            </button>
+            <div class="button__burger-none button-block">
+              <button class="menu__button__search hover">
+                <img src="./img/search.svg" alt="search" />
+              </button>
+            </div>
+            <div class="button__burger-block">
+              <button class="menu__button__divider hover">
+                <img src="./img/divider.svg" alt="divider" />
+              </button>
+            </div>
+            <div class="button__burger-block">
+              <button class="menu__button__repair hover">
+                <img src="./img/repair.svg" alt="repair" />
+              </button>
+            </div>
+            <div class="button__burger-block">
+              <button class="menu__button__checkstatus hover">
+                <img src="./img/checkstatus.svg" alt="checkstatus" />
+              </button>
+            </div>
+          </div>
+          <div class="menu__list" style="display: block">
+            <div class="menu__item">
+              <span class="menu__item__span">Ремонт техники</span>
+              <span class="menu__item__span active-span">Услуги и сервисы</span>
+              <span class="menu__item__span">Корпоративным клиентам</span>
+              <span class="menu__item__span">Продавцам техники</span>
+              <span class="menu__item__span">Партнерам</span>
+              <span class="menu__item__span">Производителям</span>
+              <span class="menu__item__span">Наши сервисные центры</span>
+              <span class="menu__item__span">Контакты</span>
+            </div>
+            <div class="menu__contact">
+              <button class="menu__contact__img">
+                <img src="./img/call.svg" alt="call" />
+              </button>
+              <button class="menu__contact__img">
+                <img src="./img/chat.svg" alt="chat" />
+              </button>
+              <button class="menu__contact__img">
+                <img src="./img/profile.svg" alt="profile" />
+              </button>
+              <span class="menu__span__mail">mail@cps.com</span>
+              <span class="menu__span__tell">8 800 890 8900</span>
+              <div class="menu__lang">
+                <span>RU</span>
+                <span>EN</span>
+                <span>CH</span>
+              </div>
+            </div>
+          </div>
+          <div class="main-sidebar" style="display: none">
+            <div class="main__title">
+              <div class="main__highlight"></div>
+              <h3 class="main__text">Услуги и сервисы</h3>
+            </div>
+            <div class="main__slide">
+              <button class="main__slide__button main__slide--active">
+                Ремонтируемые устройства
+              </button>
+              <button class="main__slide__button">
+                Дополнительные услуги
+              </button>
+              <button class="main__slide__button"> Цены на услуги </button>
+              <button class="main__slide__button"> Специальные цены </button>
+            </div>
+            <div class="main__group">
+              <div class="main__group__content__text">
+                <p class="main__group__long__text">
+                  Мы являемся авторизованным сервисным центром по ремонту
+                  техники Dell. Только у нас вы можете отремонтировать свой
+                  ноутбук Dell с официальной гарантией производителя.<br /><br />
+                  Мы успешно работаем с 1992 года и заслужили репутацию
+                  надежного партнера
+                </p>
+                <div class="main__group__readmore">
+                  <img
+                    class="main__group__readmore__expand"
+                    src="./img/expand.svg"
+                    alt="expand"
+                  />
+                  <p class="main__group__readmore__text">Читать далее</p>
+                </div>
+              </div>
+              <img
+                class="main__group__picture"
+                src="./img/Picture.png"
+                alt="picture"
+              />
+            </div>
+            <div class="main-brends">
+              <div class="brends__text">
+                <span>Ремонт техники различных брендов</span>
+              </div>
+              <div class="brends-swiper">
+                <div class="swiper-wrapper brends-wrapper">
+                  <a class="swiper-slide brends-slide" href="">
+                    <img
+                      class="brends-slide__lenovo"
+                      src="./img/lenovo.png"
+                      alt="lenovo"
+                    />
+                    <img class="brends-slide__go" src="./img/go.svg" alt="go" />
+                  </a>
+                  <a class="swiper-slide brends-slide" href="">
+                    <img
+                      class="brends-slide__samsung"
+                      src="./img/samsung.png"
+                      alt="samsung"
+                    />
+                    <img
+                      class="brendsr-slide__go"
+                      src="./img/go.svg"
+                      alt="go"
+                    />
+                  </a>
+                  <a class="swiper-slide brends-slide" href="">
+                    <img class="cards-aple" src="./img/aple.png" alt="aple" />
+                    <img class="cards-aple__go" src="./img/go.svg" alt="go" />
+                  </a>
+                  <a class="swiper-slide brends-slide" href="">
+                    <img
+                      class="cards-viewsonic"
+                      src="./img/viewsonic.png"
+                      alt="viewsonic"
+                    />
+                    <img
+                      class="cards-viewsonic__go"
+                      src="./img/go.svg"
+                      alt="go"
+                    />
+                  </a>
+                  <a class="swiper-slide brends-slide" href="">
+                    <img class="cards-bosh" src="./img/bosh.png" alt="bosch" />
+                    <img class="cards-bosh__go" src="./img/go.svg" alt="go" />
+                  </a>
+                  <a class="swiper-slide brends-slide" href="">
+                    <img class="cards-hp" src="./img/hp.png" alt="hp" />
+                    <img class="cards-hp__go" src="./img/go.svg" alt="go" />
+                  </a>
+                  <a class="swiper-slide brends-slide" href="">
+                    <img class="cards-acer" src="./img/acer.png" alt="acer" />
+                    <img class="cards-acer__go" src="./img/go.svg" alt="go" />
+                  </a>
+                  <a class="swiper-slide brends-slide" href="">
+                    <img class="cards-sony" src="./img/sony.png" alt="sony" />
+                    <img class="cards-sony__go" src="./img/go.svg" alt="go" />
+                  </a>
+                  <a class="swiper-slide brends-slide" href="">
+                    <img
+                      class="brends-slide__lenovo"
+                      src="./img/lenovo.png"
+                      alt="lenovo"
+                    />
+                    <img class="brends-slide__go" src="./img/go.svg" alt="go" />
+                  </a>
+                  <a class="swiper-slide brends-slide" href="">
+                    <img
+                      class="brends-slide__samsung"
+                      src="./img/samsung.png"
+                      alt="samsung"
+                    />
+                    <img
+                      class="brendsr-slide__go"
+                      src="./img/go.svg"
+                      alt="go"
+                    />
+                  </a>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="main-tehnika">
+              <div class="tehnika__text">
+                <span>Ремонт различных видов техники</span>
+              </div>
+              <div class="tehnika-swiper">
+                <div class="swiper-wrapper tehnika-wrapper">
+                  <a class="swiper-slider tehnika-slide" href="">
+                    <div class="tehnika-slide__text">
+                      <span>Ремонт ноутбуков</span>
+                    </div>
+                    <img
+                      class="tehnika__slide__go"
+                      src="./img/go.svg"
+                      alt="go"
+                    />
+                  </a>
+                  <a class="swiper-slider tehnika-slide" href="">
+                    <div class="tehnika-slide__text">
+                      <span>Ремонт планшетов</span>
+                    </div>
+                    <img
+                      class="tehnika__slide__go"
+                      src="./img/go.svg"
+                      alt="go"
+                    />
+                  </a>
+                  <a class="swiper-slider tehnika-slide" href="">
+                    <div class="tehnika-slide__text">
+                      <span>Ремонт ноутбуков</span>
+                    </div>
+                    <img
+                      class="tehnika__slide__go"
+                      src="./img/go.svg"
+                      alt="go"
+                    />
+                  </a>
+                  <a class="swiper-slider tehnika-slide" href="">
+                    <div class="tehnika-slide__text">
+                      <span>Ремонт планшетов</span>
+                    </div>
+                    <img
+                      class="tehnika__slide__go"
+                      src="./img/go.svg"
+                      alt="go"
+                    />
+                  </a>
+                  <a class="swiper-slider tehnika-slide" href="">
+                    <div class="tehnika-slide__text">
+                      <span>Ремонт ноутбуков</span>
+                    </div>
+                    <img
+                      class="tehnika__slide__go"
+                      src="./img/go.svg"
+                      alt="go"
+                    />
+                  </a>
+                  <a class="swiper-slider tehnika-slide" href="">
+                    <div class="tehnika-slide__text">
+                      <span>Ремонт планшетов</span>
+                    </div>
+                    <img
+                      class="tehnika__slide__go"
+                      src="./img/go.svg"
+                      alt="go"
+                    />
+                  </a>
+                  <a class="swiper-slider tehnika-slide" href="">
+                    <div class="tehnika-slide__text">
+                      <span>Ремонт ноутбуков</span>
+                    </div>
+                    <img
+                      class="tehnika__slide__go"
+                      src="./img/go.svg"
+                      alt="go"
+                    />
+                  </a>
+                  <a class="swiper-slider tehnika-slide" href="">
+                    <div class="tehnika-slide__text">
+                      <span>Ремонт планшетов</span>
+                    </div>
+                    <img
+                      class="tehnika__slide__go"
+                      src="./img/go.svg"
+                      alt="go"
+                    />
+                  </a>
+                  <a class="swiper-slider tehnika-slide" href="">
+                    <div class="tehnika-slide__text">
+                      <span>Ремонт ноутбуков</span>
+                    </div>
+                    <img
+                      class="tehnika__slide__go"
+                      src="./img/go.svg"
+                      alt="go"
+                    />
+                  </a>
+                  <a class="swiper-slider tehnika-slide" href="">
+                    <div class="tehnika-slide__text">
+                      <span>Ремонт планшетов</span>
+                    </div>
+                    <img
+                      class="tehnika__slide__go"
+                      src="./img/go.svg"
+                      alt="go"
+                    />
+                  </a>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="main-cens">
+              <div class="cens-text">
+                <span>Цены на услуги</span>
+              </div>
+              <div class="cens-swiper">
+                <div class="swiper-wrapper cens-group">
+                  <div class="swiper-slider cens-card">
+                    <div class="cens-list">
+                      <div class="cens-item">
+                        <span>Ремонтные услуги</span>
+                        <p>Тестирование с выдачей технического заключения</p>
+                      </div>
+                      <div class="cens-item">
+                        <span>Цена</span>
+                        <span>Бесплатно</span>
+                      </div>
+                      <div class="cens-item__group">
+                        <div class="cens-item__list">
+                          <span>Срок</span>
+                          <span>30-120 мин</span>
+                        </div>
+                        <button class="cens-button">
+                          <span>Заказать</span>
+                          <img src="./img/goside.svg" alt="goside" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slider cens-card">
+                    <div class="cens-list">
+                      <div class="cens-item">
+                        <span>Ремонтные услуги</span>
+                        <span>Диагностика</span>
+                      </div>
+                      <div class="cens-item">
+                        <span>Цена</span>
+                        <span>Бесплатно</span>
+                      </div>
+                      <div class="cens-item__group">
+                        <div class="cens-item__list">
+                          <span>Срок</span>
+                          <span>30-120 мин</span>
+                        </div>
+                        <button class="cens-button">
+                          <span>Заказать</span>
+                          <img src="./img/goside.svg" alt="goside" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slider cens-card">
+                    <div class="cens-list">
+                      <div class="cens-item">
+                        <span>Ремонтные услуги</span>
+                        <p>Тестирование с выдачей технического заключения</p>
+                      </div>
+                      <div class="cens-item">
+                        <span>Цена</span>
+                        <span>Бесплатно</span>
+                      </div>
+                      <div class="cens-item__group">
+                        <div class="cens-item__list">
+                          <span>Срок</span>
+                          <span>30-120 мин</span>
+                        </div>
+                        <button class="cens-button">
+                          <span>Заказать</span>
+                          <img src="./img/goside.svg" alt="goside" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slider cens-card">
+                    <div class="cens-list">
+                      <div class="cens-item">
+                        <span>Ремонтные услуги</span>
+                        <span>Диагностика</span>
+                      </div>
+                      <div class="cens-item">
+                        <span>Цена</span>
+                        <span>Бесплатно</span>
+                      </div>
+                      <div class="cens-item__group">
+                        <div class="cens-item__list">
+                          <span>Срок</span>
+                          <span>30-120 мин</span>
+                        </div>
+                        <button class="cens-button">
+                          <span>Заказать</span>
+                          <img src="./img/goside.svg" alt="goside" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slider cens-card">
+                    <div class="cens-list">
+                      <div class="cens-item">
+                        <span>Ремонтные услуги</span>
+                        <p>Тестирование с выдачей технического заключения</p>
+                      </div>
+                      <div class="cens-item">
+                        <span>Цена</span>
+                        <span>Бесплатно</span>
+                      </div>
+                      <div class="cens-item__group">
+                        <div class="cens-item__list">
+                          <span>Срок</span>
+                          <span>30-120 мин</span>
+                        </div>
+                        <button class="cens-button">
+                          <span>Заказать</span>
+                          <img src="./img/goside.svg" alt="goside" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slider cens-card">
+                    <div class="cens-list">
+                      <div class="cens-item">
+                        <span>Ремонтные услуги</span>
+                        <span>Диагностика</span>
+                      </div>
+                      <div class="cens-item">
+                        <span>Цена</span>
+                        <span>Бесплатно</span>
+                      </div>
+                      <div class="cens-item__group">
+                        <div class="cens-item__list">
+                          <span>Срок</span>
+                          <span>30-120 мин</span>
+                        </div>
+                        <button class="cens-button">
+                          <span>Заказать</span>
+                          <img src="./img/goside.svg" alt="goside" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <div class="text-long">
+                <p
+                  >Все цены указаны с учетом НДС. Стоимость ремонта указана на
+                  единичную услугу. Для получения коммерческого предложения на
+                  постоянное обслуживание, оставьте заявку.</p
+                >
+                <span>Получить коммерческое</span>
+                <div class="text-long__list">
+                  <span>предложение</span>
+                  <img class="text-long__img" src="./img/more.svg" alt="more" />
+                </div>
+              </div>
+            </div>
+            <div class="main-footer">
+              <p>© 2019 CPS</p>
+              <p>Разработано командой Apesong</p>
+              <p>Политика конфиденциальности</p>
+              <p
+                >Информация, размещенная на данной странице, не является
+                публичной офертой</p
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="main">
+          <section class="main-section">
+            <div class="main-section__title">
+              <div class="main-section__highlight"></div>
+              <div class="main-section__title__text">
+                <h3 class="main-section__title__h3">Услуги и сервисы</h3>
+              </div>
+              <div class="main-section__repair">
+                <span>Оставить заявку</span>
+                <img
+                  class="main-section__repair__img"
+                  src="./img/repair.svg"
+                  alt="repair"
+                />
+              </div>
+              <div class="main-section__checkstatus">
+                <span>Статус ремонта</span>
+                <img
+                  class="main__section__checkstatus__img"
+                  src="./img/checkstatus.svg"
+                  alt="checkstatus"
+                />
+              </div>
+            </div>
+            <div class="main-section__buttons">
+              <div class="button-active active">
+                <button class="main-section__button">
+                  Ремонтируемые бренды
+                </button>
+              </div>
+              <div class="button-active">
+                <button class="main-section__button">
+                  Дополнительные услуги
+                </button>
+              </div>
+              <div class="button-active">
+                <button class="main-section__button"> Цены на услуги </button>
+              </div>
+              <div class="button-active">
+                <button class="main-section__button">
+                  Адреса сервисных центров
+                </button>
+              </div>
+              <div class="button-active">
+                <button class="main-section__button"> Специальные цены </button>
+              </div>
+              <div class="button-active">
+                <button class="main-section__button"> Отзывы </button>
+              </div>
+            </div>
+          </section>
+          <div class="main-list">
+            <div class="main-group__content-text">
+              <p class="main-group__long-text">
+                Мы являемся авторизованным сервисным центром по ремонту техники
+                Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+                официальной гарантией производителя.
+                <br /><br />
+                Мы успешно работаем с 1992 года и заслужили репутацию надежного
+                партнера, что подтверждает большое количество постоянных
+                клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям
+                и, в свою очередь, советуют нас родным и близким.
+              </p>
+              <div class="main-group__readmore">
+                <img
+                  class="main-group__readmore-expand"
+                  src="./img/expand.svg"
+                  alt="expand"
+                />
+                <p class="main-group__readmore-text">Читать далее</p>
+              </div>
+            </div>
+            <img
+              class="main-group__picture"
+              src="./img/Picture.png"
+              alt="picture"
+            />
+          </div>
+          <div class="main-cards">
+            <div class="cards__text">
+              <p>Ремонт техники различных брендов</p>
+            </div>
+            <div class="cards__block-none">
+              <div class="cards-group">
+                <a class="cards__a-fo" href="">
+                  <img
+                    class="cards-lenovo"
+                    src="./img/lenovo.png"
+                    alt="lenovo"
+                  />
+                  <img class="cards-lenovo__go" src="./img/go.svg" alt="go" />
+                </a>
+                <a class="cards__a-fo" href="">
+                  <img
+                    class="cards-samsung"
+                    src="./img/samsung.png"
+                    alt="samsung"
+                  />
+                  <img class="cards-samsung__go" src="./img/go.svg" alt="go" />
+                </a>
+                <a class="cards__a-fo" href="">
+                  <img class="cards-aple" src="./img/aple.png" alt="aple" />
+                  <img class="cards-aple__go" src="./img/go.svg" alt="go" />
+                </a>
+                <a class="cards__a-two" href="">
+                  <img
+                    class="cards-viewsonic"
+                    src="./img/viewsonic.png"
+                    alt="viewsonic"
+                  />
+                  <img
+                    class="cards-viewsonic__go"
+                    src="./img/go.svg"
+                    alt="go"
+                  />
+                </a>
+                <a class="cards__a-fo" href="">
+                  <img class="cards-bosh" src="./img/bosh.png" alt="bosch" />
+                  <img class="cards-bosh__go" src="./img/go.svg" alt="go" />
+                </a>
+                <a class="cards__a-fo" href="">
+                  <img class="cards-hp" src="./img/hp.png" alt="hp" />
+                  <img class="cards-hp__go" src="./img/go.svg" alt="go" />
+                </a>
+                <a class="cards__a-fo" href="">
+                  <img class="cards-acer" src="./img/acer.png" alt="acer" />
+                  <img class="cards-acer__go" src="./img/go.svg" alt="go" />
+                </a>
+                <a class="cards__a-two" href="">
+                  <img class="cards-sony" src="./img/sony.png" alt="sony" />
+                  <img class="cards-sony__go" src="./img/go.svg" alt="go" />
+                </a>
+                <div class="cards__a-none">
+                  <a class="cards__a-fo" href="">
+                    <img
+                      class="cards-lenovo"
+                      src="./img/lenovo.png"
+                      alt="lenovo"
+                    />
+                    <img class="cards-lenovo__go" src="./img/go.svg" alt="go" />
+                  </a>
+                </div>
+                <div class="cards__a-none">
+                  <a class="cards__a-fo" href="">
+                    <img
+                      class="cards-samsung"
+                      src="./img/samsung.png"
+                      alt="samsung"
+                    />
+                    <img
+                      class="cards-samsung__go"
+                      src="./img/go.svg"
+                      alt="go"
+                    />
+                  </a>
+                </div>
+                <div class="cards__a-none">
+                  <a class="cards__a-fo" href="">
+                    <img class="cards-aple" src="./img/aple.png" alt="aple" />
+                    <img class="cards-aple__go" src="./img/go.svg" alt="go" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="readmore">
+              <img class="readmore__img" src="./img/expand.svg" alt="icon" />
+              <span class="readmore__text">Показать все</span>
+            </div>
+          </div>
+          <div class="main-tehnika">
+            <div class="tehnika-text__title">
+              <span>Ремонт различных видов техники</span>
+            </div>
+            <div class="tehnika-list">
+              <div class="tehnika-item">
+                <a class="tehnika-a" href="">
+                  <div class="tehnika-text">
+                    <span>Ремонт ноутбуков</span>
+                  </div>
+                  <img class="tehnika-go" src="./img/go.svg" alt="go" />
+                </a>
+                <a class="tehnika-a" href="">
+                  <div class="tehnika-text">
+                    <span>Ремонт планшетов</span>
+                  </div>
+                  <img class="tehnika-go" src="./img/go.svg" alt="go" />
+                </a>
+                <a class="tehnika-a" href="">
+                  <div class="tehnika-text">
+                    <span>Ремонт ПК</span>
+                  </div>
+                  <img class="tehnika-go" src="./img/go.svg" alt="go" />
+                </a>
+                <a class="tehnika-a" href="">
+                  <div class="tehnika-text">
+                    <span>Ремонт мониторов</span>
+                  </div>
+                  <img class="tehnika-go" src="./img/go.svg" alt="go" />
+                </a>
+                <div class="tehnika-block">
+                  <a class="tehnika-b" href="">
+                    <div class="tehnika-text">
+                      <span>Ремонт ноутбуков</span>
+                    </div>
+                    <img class="tehnika-go" src="./img/go.svg" alt="go" />
+                  </a>
+                </div>
+                <div class="tehnika-block">
+                  <a class="tehnika-b" href="">
+                    <div class="tehnika-text">
+                      <span>Ремонт планшетов</span>
+                    </div>
+                    <img class="tehnika-go" src="./img/go.svg" alt="go" />
+                  </a>
+                </div>
+                <div class="tehnika-block">
+                  <a class="tehnika-b" href="">
+                    <div class="tehnika-text">
+                      <span>Ремонт ПК</span>
+                    </div>
+                    <img class="tehnika-go" src="./img/go.svg" alt="go" />
+                  </a>
+                </div>
+                <div class="tehnika-block">
+                  <a class="tehnika-b" href="">
+                    <div class="tehnika-text">
+                      <span>Ремонт мониторов</span>
+                    </div>
+                    <img class="tehnika-go" src="./img/go.svg" alt="go" />
+                  </a>
+                </div>
+              </div>
+              <div class="tehnika-readmore">
+                <img
+                  class="tehnika-readmore__img"
+                  src="./img/expand.svg"
+                  alt="icon"
+                />
+                <span class="tehnika-readmore__text">Показать все</span>
+              </div>
+            </div>
+          </div>
+          <div class="main-footer">
+            <div class="footer-title">
+              <div class="footer-line"></div>
+              <div class="footer-text">
+                <span>цены на услуги</span>
+              </div>
+            </div>
+            <div class="footer-group">
+              <div class="footer-stacked">
+                <table class="footer-table">
+                  <tr class="footer-item__color">
+                    <td>Ремонтные услуги</td>
+                    <td>Цена</td>
+                    <td>Срок</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Диагностика</td>
+                    <td>Бесплатно</td>
+                    <td>30 мин</td>
+                    <td>
+                      <button
+                        >Заказать
+                        <img src="./img/goside.svg" alt="goside" />
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Замена дисплея</td>
+                    <td>1 000 ₽</td>
+                    <td>30-120 мин</td>
+                    <td>
+                      <button
+                        >Заказать
+                        <img src="./img/goside.svg" alt="goside" />
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Замена полифонического динамика</td>
+                    <td>1 000 ₽</td>
+                    <td>30-120 мин</td>
+                    <td>
+                      <button
+                        >Заказать
+                        <img src="./img/goside.svg" alt="goside" />
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Тестирование с выдачей технического заключения</td>
+                    <td>1 000 ₽</td>
+                    <td>30-120 мин</td>
+                    <td>
+                      <button
+                        >Заказать
+                        <img src="./img/goside.svg" alt="goside" />
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Замена программного обеспечения</td>
+                    <td>1 000 ₽</td>
+                    <td>30-120 мин</td>
+                    <td>
+                      <button
+                        >Заказать
+                        <img src="./img/goside.svg" alt="goside" />
+                      </button>
+                    </td>
+                  </tr>
+                </table>
+                <div class="foter-item__text">
+                  <p
+                    >Все цены указаны с учетом НДС. Стоимость ремонта указана на
+                    единичную услугу. Для получения коммерческого предложения на
+                    постоянное обслуживание, оставьте заявку.</p
+                  >
+                  <div class="footer-mini__group">
+                    <span>Получить коммерческое предложение</span>
+                    <img src="./img/more.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom__linear"></div>
+          <div class="footer-bottom">
+            <div class="footer-bottom__text">
+              <span>© 2019 CPS </span>
+              <span>Разработано командой Apesong</span>
+            </div>
+            <span>Политика конфиденциальности</span>
+            <div class="footer-bottom__text2">
+              <span>Информация, размещенная на данной странице,</span>
+              <span>не является публичной офертой</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+@mixin flex-justify_align {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-wrap_direction {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+@mixin import-flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin font-size_28 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -0.6px;
+  color: $black-name;
+}
+
+@mixin font-size_24 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+  color: $black-name;
+}
+
+@mixin font-size_16 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: $black-name;
+}
+
+@mixin font-weight_size-16 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+}
+
+@mixin font-size14_width-400 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+}
+
+@mixin font-size14_width-500 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+}
+
+@mixin import-flex_column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin import-flex_row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin border_bg {
+  border: none;
+  background: none;
+}
+
+@mixin width_height {
+  width: 40px;
+  height: 40px;
+}
+
+@mixin margin-left_top {
+  margin-top: 0px;
+  margin-left: 0px;
+}

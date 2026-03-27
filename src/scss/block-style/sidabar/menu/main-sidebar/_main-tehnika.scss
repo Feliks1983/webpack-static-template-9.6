@@ -1,0 +1,80 @@
+  .main-tehnika {
+  }
+
+  .tehnika__text {
+    width: 288px;
+    height: 48px;
+    opacity: 1;
+    padding: 16px;
+    @include margin-left_top;
+    border-bottom: 1px solid $color-d9f;
+    background: linear-gradient(270deg, $color-f8 0%, $color-f 98.61%);
+  }
+
+  .tehnika__text span {
+    @include font-weight_size-16;
+    text-transform: uppercase;
+    color: $color-7e;
+  }
+
+  .tehnika__brends {
+    @include import-flex_column;
+    width: 288px;
+    height: 200px;
+  }
+
+  .main-tehnika {
+    margin-top: 24px;
+    width: 480px;
+    height: 264px;
+  }
+
+  .swiper-wrapper {
+    width: 240px;
+    height: 190px;
+  }
+
+  .tehnika-wrapper {
+    display: flex;
+    width: 288px;
+    height: 190px;
+    opacity: 1;
+    @include margin-left_top;
+    gap: 16px;
+  }
+
+  .tehnika-slide {
+    display: flex;
+    width: 240px;
+    height: 160px;
+    opacity: 1;
+    @include margin-left_top;
+    background: #ffffff;
+  }
+
+  .tehnika-slide span {
+    display: flex;
+    width: 136px;
+    height: 24px;
+    opacity: 1;
+    @include margin-left_top;
+    @include font-size_16;
+  }
+
+  .tehnika__slide__go {
+    @include width_height;
+    opacity: 1;
+    margin-top: 104px;
+    margin-left: 0px;
+  }
+
+  .swiper-pagination{
+    display: block;
+    width: 204px;
+    height: 12px;
+    margin-top: 16px;
+    margin-left: 0px;
+    background: $color-f;
+    gap: 4px;
+    opacity: 1;
+  }

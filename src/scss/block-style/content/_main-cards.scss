@@ -1,0 +1,228 @@
+.main-cards {
+  display: flex;
+  flex-direction: column;
+  width: 1120px;
+  height: auto;
+  @include margin-left_top;
+  opacity: 1;
+  border-top: 1px solid $color-d9f;
+  background: $color-F8;
+}
+
+.cards__text {
+  display: flex;
+  width: 1120px;
+  height: 56px;
+  opacity: 1;
+  @include margin-left_top;
+  padding: 16px 32px;
+  background: $color-f8;
+}
+
+.cards__text p {
+  display: flex;
+  width: 338px;
+  height: 24px;
+  @include font-weight_size-16;
+  color: $color-7e;
+  text-transform: uppercase;
+}
+
+.cards__block-none {
+  display: block;
+  width: 1120px;
+  height: auto;
+}
+
+.cards-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 1120px;
+  height: auto;
+  @include margin-left_top;
+  column-gap: 32px;
+  row-gap: 16px;
+  background: $color-F8;
+  padding: 24px 32px;
+}
+
+.cards__a-none {
+  display: none;
+}
+
+.cards__a-fo {
+  display: block;
+  width: 240px;
+  height: 72px;
+  opacity: 1;
+  border-radius: 6px;
+  border-width: 1px;
+  border: 1px solid #eaeaea;
+  background: #ffffff;
+}
+
+.cards-lenovo {
+  width: 108px;
+  height: 32px;
+  opacity: 1;
+  margin-left: 16px;
+  margin-top: 20px;
+}
+
+.cards-lenovo__go {
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+  margin-left: 60px;
+  margin-top: 16px;
+}
+
+.cards-samsung {
+  width: 116px;
+  height: 38.52px;
+  opacity: 1;
+  margin-left: 16px;
+  margin-top: 17px;
+}
+
+.cards-samsung__go {
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+  margin-left: 52px;
+  margin-top: 16px;
+}
+
+.cards-aple {
+  width: 44px;
+  height: 44px;
+  opacity: 1;
+  margin-left: 16px;
+  margin-top: 12px;
+}
+
+.cards-aple__go {
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+  margin-left: 124px;
+  margin-top: 16px;
+}
+
+.cards__a-two {
+  display: block;
+  width: 240px;
+  height: 72px;
+  opacity: 1;
+  border-radius: 6px;
+  border-width: 1px;
+  border: 1px solid #eaeaea;
+  background: #ffffff;
+}
+
+.cards-viewsonic {
+  width: 128px;
+  height: 21px;
+  opacity: 1;
+  margin-left: 14px;
+  margin-top: 26px;
+}
+
+.cards-viewsonic__go {
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+  margin-left: 42px;
+  margin-top: 16px;
+}
+
+.cards-bosh {
+  width: 128px;
+  height: 28.6px;
+  opacity: 1;
+  margin-left: 16px;
+  margin-top: 21.7px;
+}
+
+.cards-bosh__go {
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+  margin-left: 40px;
+  margin-top: 16px;
+}
+
+.cards-hp {
+  width: 52px;
+  height: 52px;
+  opacity: 1;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.cards-hp__go {
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+  margin-left: 122px;
+  margin-top: 16px;
+}
+
+.cards-acer {
+  width: 94px;
+  height: 24px;
+  opacity: 1;
+  margin-left: 16px;
+  margin-top: 24px;
+}
+
+.cards-acer__go {
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+  margin-left: 74px;
+  margin-top: 16px;
+}
+
+.cards-sony {
+  width: 128px;
+  height: 25.6px;
+  opacity: 1;
+  margin-left: 14px;
+  margin-top: 23px;
+}
+
+.cards-sony__go {
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+  margin-left: 42px;
+  margin-top: 16px;
+}
+
+.readmore {
+  display: flex;
+  width: 133px;
+  height: 24px;
+  opacity: 1;
+  margin-top: 0px;
+  margin-left: 32px;
+  background: $color-f8;
+}
+
+.readmore__img {
+  width: 24px;
+  height: 24px;
+  opacity: 1;
+  @include margin-left_top;
+}
+
+.readmore__text {
+  width: 101px;
+  height: 24px;
+  opacity: 1;
+  @include margin-left_top;
+  @include font-weight_size-16;
+  color: $black-name;
+}

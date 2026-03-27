@@ -1,0 +1,89 @@
+.button__burger-block {
+  display: none;
+}
+
+  .button__burger-block__none {
+    display: none;
+    
+  }
+
+.button__burger-none {
+  display: block;
+}
+
+.menu__button {
+  display: flex;
+  align-items: center;
+  width: 320px;
+  height: 51px;
+  @include margin-left_top;
+  padding: 18.73px 0px 0px 0px;
+  gap: 16px;
+  margin-left: 16px;
+}
+
+.menu__button,
+.hover:hover {
+  opacity: 0.5;
+}
+
+.menu__button,
+.hover:active {
+  opacity: 1;
+}
+
+.menu__button__burger {
+  @include import-flex_center;
+  @include width_height;
+  margin-left: 0px;
+  margin-top: 8px;
+  @include border_bg;
+}
+
+.menu__button__burger-menu {
+  @include import-flex_center;
+  @include width_height;
+  margin-left: 0px;
+  margin-top: 8px;
+  @include border_bg;
+}
+
+.menu__button__group {
+  @include import-flex_center;
+  width: 96.55px;
+  height: 50.81px;
+  @include margin-left_top;
+  @include border_bg;
+}
+
+.menu__button__divider {
+  width: 2px;
+  height: 32px;
+  margin-top: 0px;
+  margin-left: 0px;
+  border-radius: 1px;
+  opacity: 1;
+  @include border_bg;
+}
+
+.menu__button__repair {
+  @include import-flex_center;
+  @include width_height;
+  @include margin-left_top;
+  @include border_bg;
+}
+
+.menu__button__search {
+  @include import-flex_center;
+  @include width_height;
+  margin-left: 78.73px;
+  margin-top: 8px;
+  @include border_bg;
+}
+
+.menu__button__checkstatus {
+  @include import-flex_center;
+  @include width_height;
+  @include margin-left_top;
+  @include border_bg;
+}

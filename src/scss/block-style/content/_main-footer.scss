@@ -1,0 +1,158 @@
+.main-footer {
+  width: 1120px;
+  height: 576px;
+  margin-top: 0px;
+  margin-left: 32px;
+  opacity: 1;
+}
+
+.footer-title {
+  width: 1120px;
+  height: 57px;
+  margin-top: 0px;
+  margin-left: 0px;
+  opacity: 1;
+}
+
+.footer-text {
+  @include font-weight_size-16;
+  text-transform: uppercase;
+  color: $color-7e;
+  opacity: 1;
+  padding-left: 0px;
+  padding-bottom: 16px;
+}
+
+.footer-group {
+  width: 1056px;
+  height: 488px;
+  margin-top: 0px;
+  margin-left: 0px;
+  opacity: 1;
+}
+
+.footer-stacked {
+  width: 1056px;
+  height: 356px;
+  opacity: 1;
+}
+
+.footer-table {
+  width: 1056px;
+  height: 356px;
+  margin-top: 0px;
+  margin-left: 0px;
+  opacity: 1;
+  background: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  border-collapse: collapse;
+
+  tr + tr {
+    border-bottom: 1px solid $color-ea;
+  }
+
+  td {
+    padding-left: 24px;
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    width: 119px;
+    height: 32px;
+    opacity: 1;
+    border-radius: 16px;
+    background: #ff3e79;
+    gap: 8px;
+    color: #ffffff;
+    border: none;
+    padding-left: 12px;
+  }
+
+  img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.footer-item__color {
+  height: 32px;
+  margin-bottom: 0px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0px;
+  background: #f8f8f8;
+}
+
+.foter-item__text {
+  width: 421px;
+  height: 60px;
+  margin-top: 32px;
+  margin-left: 0px;
+  opacity: 1;
+}
+
+.foter-item__text p {
+  @include font-size14_width-400;
+  color: $black-name;
+}
+
+.footer-mini__group {
+  display: flex;
+  width: 326px;
+  height: 24px;
+  margin-top: 0px;
+  margin-left: 0px;
+  opacity: 1;
+  @include font-size_16;
+}
+
+.footer-mini__group img {
+  width: 24px;
+  height: 24px;
+  margin-top: 0px;
+  margin-left: 0px;
+  opacity: 1;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 1120px;
+  height: 65px;
+  margin-top: 0px;
+  margin-left: 31px;
+  @include font-size14_width-500;
+  color: #7E7E82;
+  opacity: 0.72;
+}
+
+.footer-bottom__text {
+  display: flex;
+  width: 218px;
+  height: 32px;
+  opacity: 0.72;
+  @include font-size14_width-500;
+}
+
+.footer-bottom__text2 {
+  display: flex;
+  flex-direction: column;
+  width: 330px;
+  height: 32px;
+  opacity: 0.72;
+  @include font-size14_width-500;
+}
+
+.footer-bottom__linear {
+  width: 1120px;
+  height: 1px;
+  margin-top: 0px;
+  margin-left: 0px;
+  background: #d9fff5;
+  opacity: 1;
+}

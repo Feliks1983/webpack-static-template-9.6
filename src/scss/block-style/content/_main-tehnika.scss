@@ -1,0 +1,118 @@
+.main-tehnika {
+  width: 1120px;
+  padding-left: 32px;
+  margin-top: 50px;
+}
+
+.tehnika-list {
+  width: 1120px;
+  margin-left: 0px;
+  margin-top: 0px;
+}
+
+.tehnika-text__title {
+  width: 1120px;
+  height: 56px;
+  opacity: 1;
+  @include margin-left_top;
+}
+
+.tehnika-text__title span {
+  width: 316px;
+  height: 24px;
+  display: flex;
+  @include font-weight_size-16;
+  text-transform: uppercase;
+  color: $color-7e;
+}
+
+.tehnika-item {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  width: 1120px;
+  height: auto;
+  opacity: 1;
+  @include margin-left_top;
+  gap: 32px;
+  color: $black-name;
+}
+
+.tehnika-block {
+  display: none;
+  width: 240px;
+  height: 160px;
+  opacity: 1;
+}
+
+.tehnika-b {
+  display: flex;
+  width: 240px;
+  height: 160px;
+  opacity: 1;
+  padding: 0px;
+  background: #ffffff;
+  color: $black-name;
+}
+
+.tehnika-a {
+  display: flex;
+  width: 240px;
+  height: 160px;
+  opacity: 1;
+  @include margin-left_top;
+  padding: 0px;
+  background: #ffffff;
+}
+
+.tehnika-a span {
+  display: flex;
+  width: 160px;
+  height: 24px;
+  opacity: 1;
+  margin-top: 16px;
+  margin-left: 16px;
+  @include font-size_16;
+}
+
+.tehnika-b span {
+  display: flex;
+  width: 160px;
+  height: 24px;
+  opacity: 1;
+  margin-top: 16px;
+  margin-left: 16px;
+  @include font-size_16;
+}
+
+.tehnika-go {
+  @include width_height;
+  opacity: 1;
+  margin-top: 104px;
+  margin-left: 0px;
+}
+
+.tehnika-readmore {
+  display: flex;
+  width: 133px;
+  height: 24px;
+  opacity: 1;
+  margin-top: 24px;
+  margin-left: 0px;
+  background: $color-f8;
+}
+
+.tehnika-readmore__img {
+  width: 24px;
+  height: 24px;
+  opacity: 1;
+  @include margin-left_top;
+}
+
+.tehnika-readmore__text {
+  width: 101px;
+  height: 24px;
+  opacity: 1;
+  @include margin-left_top;
+  @include font-weight_size-16;
+  color: $black-name;
+}

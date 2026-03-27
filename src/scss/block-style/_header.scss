@@ -1,0 +1,29 @@
+.header{
+		background: #fff;
+    width: auto;
+    box-sizing: border-box;
+		height: 88px;
+		background: #fff;
+}
+
+	.header__title {
+		display: flex;
+		align-items: center;
+		gap: 16px;
+		width: auto;
+		height: 88px;
+		border-bottom: 1px solid #d9fff5;
+		padding: 16px 18px 24px;
+
+	}
+
+	.headar__icon {
+		width: 40px;
+		height: 40px;
+	}
+
+	.headar__icon__group {
+		width: 97px;
+		height: 51px;
+		margin-right: auto;
+	}

@@ -1,6 +1,6 @@
 .main-brends {
   width: auto;
-  height: 196px;
+  height: auto;
   margin-left: 0px;
   margin-top: 24px;
   opacity: 1;
@@ -9,19 +9,19 @@
 .brends__text {
   display: flex;
   width: auto;
-  height: 80px;
+  height: 60px;
   margin-top: 0px;
   opacity: 1;
   @include margin-left_top;
-   border-top: 1px solid $color-d9f;
+  border-top: 1px solid $color-d9f;
   background: linear-gradient(to right, $color-f8 20%, $color-f 80%);
 }
 
 .brends__text span {
   display: flex;
+  align-items: center;
   width: auto;
   height: 48px;
-  margin-top: 16px;
   margin-left: 16px;
   @include font-weight_size-16;
   text-transform: uppercase;
@@ -29,10 +29,11 @@
 }
 
 .swiper.brends-swiper {
-    width: auto;
-  height: 126px;
-margin-left: 16px;
+  width: auto;
+  height: 120px;
+  margin-left: 16px;
   padding-bottom: 16px !important;
+  margin-top: 16px;
 }
 
 .swiper-wrapper.brends-wrapper {
@@ -46,13 +47,7 @@ margin-left: 16px;
   opacity: 1;
   padding: 16px;
   background: $color-f;
-  @media screen and (min-width: 1120px) {
-      .brends-slide:nth-child(n+5) {
-    display: none !important;
-  }
-  }
 }
-
 
 .brends-slide__lenovo {
   width: 108px;

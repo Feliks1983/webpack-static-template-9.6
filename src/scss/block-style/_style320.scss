@@ -17,7 +17,7 @@
 
   .menu {
     width: auto;
-    height: auto;
+    height: 100%;
     @include margin-left_top;
     padding-bottom: 32px;
   }
@@ -28,7 +28,7 @@
   .main-sidebar {
     display: block;
     width: auto;
-    height: auto;
+    height: 100%;
     background: $color-f8;
   }
 

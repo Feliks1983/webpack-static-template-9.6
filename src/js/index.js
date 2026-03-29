@@ -16,13 +16,18 @@ const menuButtonBurger = document.querySelector('.menu__button__burger')
 burgerMenu.addEventListener('click', function () {
   sidebar.style.width = '320px'
   sidebar.style.display = 'block'
-  content.style.marginLeft = '320px'
+  content.style.marginLeft = '0px'
 })
 
 menuButtonBurger.addEventListener('click', function(){
-    sidebar.style.width = '0px'
     sidebar.style.display = 'none'
-    content.style.marginLeft = '0px'
+})
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 1440){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.removeProperty('display')
+  }
 })
 
 readmore.addEventListener('click', function () {

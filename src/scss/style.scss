@@ -13,16 +13,47 @@ button {
   background: none;
 }
 
-  .services {
-    overflow: hidden
-  }
-  .brends-slide {
-    display: block;
-  }
+.services {
+  overflow: hidden;
+}
+.brends-slide {
+  display: block;
+}
+
 @import './block-style/_color.scss';
 @import './block-style/_mixin.scss';
 @import './block-style/_style320.scss';
 @import './block-style/_style1120.scss';
 @import './block-style/_style1440.scss';
 
+@media screen and (min-width: 768px) and (max-width: 1120px) {
+  .cards-group {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: auto;
+    height: auto;
+    column-gap: 32px;
+    row-gap: 16px;
+    margin-left: 0px;
+    margin-top: 24px;
+  }
+  .cards-item:nth-child(n + 7) {
+    display: none;
+  }
+}
 
+    @media screen and (min-width: 768px) and (max-width: 900px) {
+    .cards-group {
+      display: grid;
+      grid-template-columns: auto auto;
+      width: auto;
+      height: auto;
+      column-gap: 32px;
+      row-gap: 16px;
+      margin-left: 0px;
+      margin-top: 24px;
+    }
+    .cards-item:nth-child(n + 5) {
+      display: none;
+    }
+  }

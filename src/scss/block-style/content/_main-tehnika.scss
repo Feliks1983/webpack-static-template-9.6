@@ -1,11 +1,13 @@
 .main-tehnika {
   width: auto;
+  height: auto;
   padding-left: 32px;
   margin-top: 24px;
 }
 
 .tehnika-list {
   width: auto;
+  height: auto;
   margin-left: 0px;
   margin-top: 0px;
 }
@@ -14,7 +16,8 @@
   width: auto;
   height: 56px;
   opacity: 1;
-  @include margin-left_top;
+  margin-top: 50px;
+  border-top: 1px solid $color-d9f;
   background: linear-gradient(to right, #F8F8F8 20%, #FFFFFF 80%);
 }
 

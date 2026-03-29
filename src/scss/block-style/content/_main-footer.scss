@@ -3,11 +3,12 @@
   height: 576px;
   margin-top: 0px;
   margin-left: 32px;
+  margin-right: 32px;
   opacity: 1;
 }
 
 .footer-title {
-  width: auto;
+  width: 100%;
   height: 57px;
   margin-top: 0px;
   margin-left: 0px;
@@ -21,24 +22,27 @@
   color: $color-7e;
   opacity: 1;
   padding: 16px 0px;
+  margin-top: 50px;
+  border-top: 1px solid $color-d9f;
+  background: linear-gradient(to right, #f8f8f8 20%, #ffffff 80%);
 }
 
 .footer-group {
   width: auto;
-  height: 488px;
+  height: 100%;
   margin-top: 0px;
   margin-left: 0px;
   opacity: 1;
 }
 
 .footer-stacked {
-  width: auto;
-  height: 356px;
+  width: 100%;
+  height: 100%;
   opacity: 1;
 }
 
 .footer-table {
-  width: 1120px;
+  width: 100%;
   height: 356px;
   opacity: 1;
   background: #ffffff;
@@ -67,7 +71,7 @@
     color: $black-name;
   }
 
-  tr td button {
+  button {
     display: flex;
     align-items: center;
     width: 119px;
@@ -134,37 +138,42 @@
 .footer-bottom {
   display: flex;
   justify-content: space-between;
-  width: 1120px;
+  width: auto;
   height: 65px;
-  margin-top: 0px;
+  margin-top: 50px;
   margin-left: 31px;
+    margin-right: 33px;
+    margin-bottom: 21px;
   @include font-size14_width-500;
   color: #7e7e82;
-  opacity: 0.72;
+  opacity: 1;
+  border-top: 1px solid $color-d9f;
+
+  span {
+    margin-top: auto;
+  }
 }
 
 .footer-bottom__text {
   display: flex;
   width: 218px;
   height: 32px;
-  opacity: 0.72;
+  opacity: 1;
   @include font-size14_width-500;
+  margin-top: auto;
 }
 
 .footer-bottom__text2 {
   display: flex;
   flex-direction: column;
-  width: 330px;
+  width: 340px;
   height: 32px;
-  opacity: 0.72;
+  opacity: 1;
   @include font-size14_width-500;
+  margin-top: auto;
+  span + span {
+  margin-left: 110px;
+}
 }
 
-.footer-bottom__linear {
-  width: 1120px;
-  height: 1px;
-  margin-top: 0px;
-  margin-left: 0px;
-  background: #d9fff5;
-  opacity: 1;
-}
+

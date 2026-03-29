@@ -60,18 +60,11 @@
   .services {
     display: flex;
     width: auto;
-    height: 1925px;
+    height: auto;
   }
 
   .sidebar {
-    display: block;
-    width: 298px;
-    height: 881.78px;
-    opacity: 1;
-    padding-top: 0px;
-    padding-right: 29px;
-    margin-left: 1px;
-    background: $color-f;
+    display: block !important;
   }
 
   @import './sidabar/menu/menu';
@@ -79,18 +72,17 @@
   .content {
     display: block;
     width: auto;
-    height: 1925px;
+    height: auto;
     opacity: 1;
-    margin-left: 320px;
+    margin-left: 0px;
     margin-top: 0px;
     background: $color-f8;
     padding-top: 0px;
   }
 
   .main {
-    display: grid;
     width: auto;
-    height: 1925px;
+    height: auto;
     background: #f8f8f8;
     margin-left: 0px;
     margin-top: 0px;
@@ -115,4 +107,3 @@
 
   @import './content/main-footer';
 }
-

@@ -1,11 +1,10 @@
 .main-cards {
   display: flex;
   flex-direction: column;
-  width: auto;
+  width: 100%;
   height: auto;
   @include margin-left_top;
   opacity: 1;
-  border-top: 1px solid $color-d9f;
   background: $color-F8;
   margin-top: 24px;
   margin-left: 32px;
@@ -16,13 +15,14 @@
   width: auto;
   height: 56px;
   opacity: 1;
-  @include margin-left_top;
-  background: linear-gradient(to right, #F8F8F8 20%, #FFFFFF 80%);
+  margin-top: 51px;
+  border-top: 1px solid $color-d9f;
+  background: linear-gradient(to right, #f8f8f8 20%, #ffffff 80%);
 }
 
 .cards__text p {
   display: flex;
-  width: 338px;
+  width: auto;
   height: 24px;
   @include font-weight_size-16;
   color: $color-7e;
@@ -39,9 +39,8 @@
 .cards-group {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  width: auto;
+  width: 100%;
   height: auto;
-  @include margin-left_top;
   column-gap: 32px;
   row-gap: 16px;
   background: $color-F8;
@@ -59,7 +58,6 @@
   height: 72px;
   opacity: 1;
   border-radius: 6px;
-  border-width: 1px;
   border: 1px solid #eaeaea;
   background: #ffffff;
 }

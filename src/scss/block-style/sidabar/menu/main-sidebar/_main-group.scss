@@ -44,9 +44,8 @@
   }
 
   .main__group__picture {
-    width: 100%;
+    min-width: 100%;
     height: auto;
-    max-width: 320px;
     border-radius: 6px;
     @include border_bg;
   }

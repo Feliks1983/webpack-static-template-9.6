@@ -1,20 +1,21 @@
 .main-tehnika {
-  width: 1120px;
+  width: auto;
   padding-left: 32px;
-  margin-top: 50px;
+  margin-top: 24px;
 }
 
 .tehnika-list {
-  width: 1120px;
+  width: auto;
   margin-left: 0px;
   margin-top: 0px;
 }
 
 .tehnika-text__title {
-  width: 1120px;
+  width: auto;
   height: 56px;
   opacity: 1;
   @include margin-left_top;
+  background: linear-gradient(to right, #F8F8F8 20%, #FFFFFF 80%);
 }
 
 .tehnika-text__title span {
@@ -24,17 +25,19 @@
   @include font-weight_size-16;
   text-transform: uppercase;
   color: $color-7e;
+  padding: 16px 0px;
 }
 
 .tehnika-item {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  width: 1120px;
+  width: auto;
   height: auto;
   opacity: 1;
   @include margin-left_top;
   gap: 32px;
   color: $black-name;
+  margin-top: 24px;
 }
 
 .tehnika-block {
@@ -44,7 +47,7 @@
   opacity: 1;
 }
 
-.tehnika-b {
+.tehnika-a {
   display: flex;
   width: 240px;
   height: 160px;
@@ -54,27 +57,7 @@
   color: $black-name;
 }
 
-.tehnika-a {
-  display: flex;
-  width: 240px;
-  height: 160px;
-  opacity: 1;
-  @include margin-left_top;
-  padding: 0px;
-  background: #ffffff;
-}
-
 .tehnika-a span {
-  display: flex;
-  width: 160px;
-  height: 24px;
-  opacity: 1;
-  margin-top: 16px;
-  margin-left: 16px;
-  @include font-size_16;
-}
-
-.tehnika-b span {
   display: flex;
   width: 160px;
   height: 24px;

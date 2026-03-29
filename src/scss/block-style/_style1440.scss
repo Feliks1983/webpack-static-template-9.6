@@ -1,4 +1,4 @@
-@media screen and (min-width: 1120px) {
+@media screen and (min-width: 1440px) {
   .main-sidebar {
     display: none;
   }
@@ -19,7 +19,7 @@
     display: block;
   }
 
-  .active-span {
+  .menu__item__span:hover {
     border-left: 4px solid $color-41f;
     opacity: 1;
     color: #7e7e82;
@@ -59,7 +59,7 @@
 
   .services {
     display: flex;
-    width: 1440px;
+    width: auto;
     height: 1925px;
   }
 
@@ -78,10 +78,10 @@
 
   .content {
     display: block;
-    width: 100vw;
+    width: auto;
     height: 1925px;
     opacity: 1;
-    margin-left: 0px;
+    margin-left: 320px;
     margin-top: 0px;
     background: $color-f8;
     padding-top: 0px;
@@ -89,7 +89,7 @@
 
   .main {
     display: grid;
-    width: 100vw;
+    width: auto;
     height: 1925px;
     background: #f8f8f8;
     margin-left: 0px;
@@ -98,6 +98,10 @@
 
   .main__title,
   .main__slide {
+    display: block;
+  }
+
+  .block-none {
     display: block;
   }
 

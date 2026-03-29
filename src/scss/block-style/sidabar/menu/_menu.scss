@@ -1,6 +1,6 @@
   .menu {
-    width: 276px;
-    height: 881.78px;
+    width: auto;
+    height: auto;
     opacity: 1;
     margin-top: 0px;
     margin-left: 0px;
@@ -58,7 +58,7 @@
     width: 320px;
     height: 364px;
     margin-top: 0px;
-    margin-left: 0px;
+    margin-left: 24px;
     gap: 24px;
     @include font-size_16;
   }

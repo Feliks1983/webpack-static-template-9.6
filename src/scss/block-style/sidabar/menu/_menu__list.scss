@@ -12,12 +12,12 @@
   width: 320px;
   height: 364px;
   margin-top: 0px;
-  margin-left: 8px;
+  margin-left: 0px;
   gap: 24px;
   @include font-size_16;
 }
 
-  .active-span {
+  .menu__item__span {
     display: flex;
     align-items: center;
     @include margin-left_top;
@@ -32,11 +32,11 @@
   }
 
 .menu__contact {
-  @include flex-wrap_direction;
+  display: flex;
   width: 196px;
   height: 124px;
   margin-top: 0px;
-  margin-left: 16px;
+  margin-left: 0px;
   opacity: 1;
 }
 
@@ -47,7 +47,6 @@
   width: 40px;
   height: 40px;
   margin-top: 268px;
-  margin-right: auto;
   opacity: 1;
   @include border_bg;
 }
@@ -71,7 +70,7 @@
 }
 
 .menu__lang {
-  margin-top: 8px;
+  margin-top: 0px;
   margin-left: 0px;
 }
 

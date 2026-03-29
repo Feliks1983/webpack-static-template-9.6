@@ -1,22 +1,23 @@
 .main-cards {
   display: flex;
   flex-direction: column;
-  width: 1120px;
+  width: auto;
   height: auto;
   @include margin-left_top;
   opacity: 1;
   border-top: 1px solid $color-d9f;
   background: $color-F8;
+  margin-top: 24px;
+  margin-left: 32px;
 }
 
 .cards__text {
   display: flex;
-  width: 1120px;
+  width: auto;
   height: 56px;
   opacity: 1;
   @include margin-left_top;
-  padding: 16px 32px;
-  background: $color-f8;
+  background: linear-gradient(to right, #F8F8F8 20%, #FFFFFF 80%);
 }
 
 .cards__text p {
@@ -26,33 +27,34 @@
   @include font-weight_size-16;
   color: $color-7e;
   text-transform: uppercase;
+  padding: 16px 0px;
 }
 
 .cards__block-none {
   display: block;
-  width: 1120px;
+  width: auto;
   height: auto;
 }
 
 .cards-group {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 1120px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  width: auto;
   height: auto;
   @include margin-left_top;
   column-gap: 32px;
   row-gap: 16px;
   background: $color-F8;
-  padding: 24px 32px;
+  margin-left: 0px;
+  margin-top: 24px;
 }
 
 .cards__a-none {
   display: none;
 }
 
-.cards__a-fo {
-  display: block;
+.cards-item {
+  display: flex;
   width: 240px;
   height: 72px;
   opacity: 1;
@@ -108,17 +110,6 @@
   opacity: 1;
   margin-left: 124px;
   margin-top: 16px;
-}
-
-.cards__a-two {
-  display: block;
-  width: 240px;
-  height: 72px;
-  opacity: 1;
-  border-radius: 6px;
-  border-width: 1px;
-  border: 1px solid #eaeaea;
-  background: #ffffff;
 }
 
 .cards-viewsonic {
@@ -206,8 +197,8 @@
   width: 133px;
   height: 24px;
   opacity: 1;
-  margin-top: 0px;
-  margin-left: 32px;
+  margin-top: 24px;
+  margin-left: 0px;
   background: $color-f8;
 }
 

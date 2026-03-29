@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'TT Lakes';
-  src: url('../fonts/TTLakes-Regular.ttf') format('truetype');
+  font-family: 'TT Lakes Medium';
+  src: url('../fonts/TTLakes-Medium.ttf') format('opentype');
   font-weight: normal;
 }
 
@@ -8,10 +8,21 @@ body {
   box-sizing: border-box;
   font-family: 'TT Lakes';
 }
+button {
+  border: none;
+  background: none;
+}
 
+  .services {
+    overflow: hidden
+  }
+  .brends-slide {
+    display: block;
+  }
 @import './block-style/_color.scss';
 @import './block-style/_mixin.scss';
 @import './block-style/_style320.scss';
+@import './block-style/_style1120.scss';
 @import './block-style/_style1440.scss';
 
 

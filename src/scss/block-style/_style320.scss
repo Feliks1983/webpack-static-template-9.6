@@ -3,14 +3,21 @@
     display: none;
   }
 
+  .header {
+    display: none;
+  }
+
+  .menu__list {
+    display: none;
+  }
+
   .sidebar {
-    display: flex;
-    justify-content: center;
+    display: block;
   }
 
   .menu {
-    width: 100vw;
-    height: 676px;
+    width: auto;
+    height: auto;
     @include margin-left_top;
     padding-bottom: 32px;
   }
@@ -19,15 +26,16 @@
   @import './sidabar/menu/menu__list';
 
   .main-sidebar {
-    width: 320px;
-    height: 1722px;
+    display: block;
+    width: auto;
+    height: auto;
     background: $color-f8;
   }
 
   .main__title {
     display: flex;
     align-items: center;
-    width: 304px;
+    width: auto;
     height: 40px;
     margin-top: 0px;
     opacity: 1;
@@ -58,13 +66,16 @@
   @import './sidabar/menu/main-sidebar/main-cens.scss';
 
   .text-long {
-    width: 288px;
-    height: 191.98px;
+    width: auto;
+    height: auto;
     margin-left: 16px;
+    margin-top: 24px;
     opacity: 1;
   }
 
   .text-long p {
+    width: auto;
+    height: auto;
     margin-left: 0px;
     margin-top: 24px;
     font-weight: 400;
@@ -76,7 +87,7 @@
 
   .text-long__list {
     display: flex;
-    width: 192px;
+    width: auto;
     height: 54.98px;
     @include margin-left_top;
     opacity: 1;
@@ -93,7 +104,7 @@
   .main-footer {
     display: flex;
     flex-direction: column;
-    width: 320px;
+    width: auto;
     height: 129px;
     margin-top: 40px;
     opacity: 1;

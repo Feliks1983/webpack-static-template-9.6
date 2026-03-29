@@ -1,86 +1,192 @@
 .main-brends {
-  display: grid;
-  width: 1120px;
+  width: auto;
   height: 196px;
   margin-left: 0px;
-  margin-top: 0px;
+  margin-top: 24px;
   opacity: 1;
 }
 
 .brends__text {
-  display: block;
-  width: 320px;
+  display: flex;
+  width: auto;
   height: 80px;
+  margin-top: 0px;
   opacity: 1;
   @include margin-left_top;
-  background: linear-gradient(270deg, $color-f8 0%, $color-f 98.61%);
+   border-top: 1px solid $color-d9f;
+  background: linear-gradient(to right, $color-f8 20%, $color-f 80%);
 }
 
 .brends__text span {
   display: flex;
-  align-items: center;
-  width: 288px;
+  width: auto;
   height: 48px;
-  margin-left: 16px;
   margin-top: 16px;
+  margin-left: 16px;
   @include font-weight_size-16;
   text-transform: uppercase;
-  background: $color-f;
   color: $color-7e;
 }
 
-.brends-swiper {
-  width: 480px;
-  height: 72px;
+.swiper.brends-swiper {
+    width: auto;
+  height: 126px;
+margin-left: 16px;
+  padding-bottom: 16px !important;
 }
 
-.swiper-wrapper {
-  display: flex;
+.swiper-wrapper.brends-wrapper {
   width: 240px;
   height: 72px;
-  @include margin-left_top;
-  gap: 16px;
-}
-
-.brends-wrapper {
-
 }
 
 .brends-slide {
-  display: flex;
-  align-items: center;
   width: 240px;
   height: 40px;
   opacity: 1;
-  @include margin-left_top;
+  padding: 16px;
   background: $color-f;
+  @media screen and (min-width: 1120px) {
+      .brends-slide:nth-child(n+5) {
+    display: none !important;
+  }
+  }
 }
+
 
 .brends-slide__lenovo {
   width: 108px;
   height: 32px;
-  @include margin-left_top;
   opacity: 1;
+  margin-left: 16px;
+  margin-top: 20px;
 }
 
 .brends-slide__go {
-  @include width_height;
-  @include margin-left_top;
+  width: 40px;
+  height: 40px;
   opacity: 1;
+  margin-left: 60px;
+  margin-top: 16px;
 }
 
 .brends-slide__samsung {
   width: 116px;
   height: 38.52px;
-  @include margin-left_top;
   opacity: 1;
+  margin-left: 16px;
+  margin-top: 17px;
 }
 
-.brends-pagination {
+.brends-slide__go {
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+  margin-left: 52px;
+  margin-top: 16px;
+}
+
+.brends-slide__aple {
+  width: 44px;
+  height: 44px;
+  opacity: 1;
+  margin-left: 16px;
+  margin-top: 12px;
+}
+
+.brends-slide__go {
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+  margin-left: 124px;
+  margin-top: 16px;
+}
+
+.brends-slide__viewsonic {
+  width: 128px;
+  height: 21px;
+  opacity: 1;
+  margin-left: 14px;
+  margin-top: 26px;
+}
+
+.brends-slide__go {
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+  margin-left: 42px;
+  margin-top: 16px;
+}
+
+.brends-slide__bosh {
+  width: 128px;
+  height: 28.6px;
+  opacity: 1;
+  margin-left: 16px;
+  margin-top: 21.7px;
+}
+
+.brends-slide__go {
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+  margin-left: 40px;
+  margin-top: 16px;
+}
+
+.brends-slide__hp {
+  width: 52px;
+  height: 52px;
+  opacity: 1;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.brends-slide__go {
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+  margin-left: 122px;
+  margin-top: 16px;
+}
+
+.brends-slide__acer {
+  width: 94px;
+  height: 24px;
+  opacity: 1;
+  margin-left: 16px;
+  margin-top: 24px;
+}
+
+.brends-slide__go {
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+  margin-left: 74px;
+  margin-top: 16px;
+}
+
+.brends-slide__sony {
+  width: 128px;
+  height: 25.6px;
+  opacity: 1;
+  margin-left: 14px;
+  margin-top: 23px;
+}
+
+.brends-slide__go {
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+  margin-left: 42px;
+  margin-top: 16px;
+}
+
+swiper-pagination.brends-paginat {
   width: 204px;
   height: 12px;
   margin-top: 0px;
   margin-left: 0px;
-  background: $color-f;
-  gap: 4px;
+  background: $color-f8;
+  opacity: 1;
 }

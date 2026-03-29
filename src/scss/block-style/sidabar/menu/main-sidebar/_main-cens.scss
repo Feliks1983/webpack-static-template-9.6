@@ -1,17 +1,20 @@
 .main-cens {
-  width: 584px;
-  height: 507.98px;
+  width: auto;
+  height: 196px;
   opacity: 1;
-  @include margin-left_top;
+  margin-top: 24px;
 }
 
 .cens-text {
-  width: 328px;
-  height: 56px;
+  display: block;
+  width: auto;
+  height: auto;
   opacity: 1;
-  @include margin-left_top;
-  border-bottom: 1px solid $color-d9f;
-  background: linear-gradient(270deg, $color-f8 0%, $color-f 98.61%);
+  padding: 16px 0;
+  margin-top: 24px;
+  margin-left: 16px;
+  border-top: 1px solid $color-d9f;
+  background: linear-gradient(to right, $color-f8 20%, $color-f 80%);
 }
 
 .cens-text span {
@@ -19,52 +22,46 @@
   height: 24px;
   opacity: 1;
   margin-top: 16px;
-  margin-left: 16px;
+  margin-left: 0px;
   @include font-weight_size-16;
   text-transform: uppercase;
   color: $color-7e;
 }
 
 .main-cens {
-  display: grid;
-  grid-template-rows: auto auto auto;
-  gap: 16px;
   margin-top: 24px;
-  width: 100vw;
-  height: 508px;
+  width: auto;
+  height: 584px;
 }
 
-.cens-swiper {
-  width: 536px;
-  height: 240px;
+.swiper.cens-swiper {
+  width: auto;
+  height: 230px;
+  margin-left: 0px;
+  padding-bottom: 16px !important;
 }
 
-.swiper-wrapper {
-  width: 260px;
-  height: 200px;
-}
-
-.cens-group {
-  display: flex;
+.swiper-wrapper.cens-wrapper {
   width: 260px;
   height: 200px;
 }
 
 .cens-card {
-  width: 260px;
+  width: auto;
   height: 200px;
   opacity: 1;
   margin-left: 16px;
   margin-top: 16px;
+  background: #ffffff;
 }
 
 .cens-list {
   @include import-flex_column;
   width: 228px;
   height: 168px;
+  padding: 16px;
   opacity: 1;
   @include margin-left_top;
-  gap: 16px;
 }
 
 .cens-item {
@@ -73,7 +70,7 @@
 
 .cens-item__group {
   display: flex;
-  width: 228px;
+  width: auto;
   height: 38px;
   gap: 28px;
 }
@@ -108,12 +105,11 @@
   color: $color-f;
 }
 
-.cens-pagination {
-  display: block;
-  width: 204px;
-  height: 12px;
-  margin-top: 16px;
+.cens-paginat.swiper-pagination {
+  width: auto;
+  height: auto;
+  margin-top: 0px;
   margin-left: 0px;
-  background: $color-f;
-  gap: 4px;
+  background: $color-f8;
+  opacity: 1;
 }

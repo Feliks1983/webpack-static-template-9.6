@@ -28,7 +28,6 @@
     "not OperaMini All",
     "not dead"
   ],
-  "homepage": "https://feliks1983.github.io/webpack-static-template-9.6/",
   "devDependencies": {
     "@babel/core": "^7.22.20",
     "@babel/preset-env": "^7.22.20",

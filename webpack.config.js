@@ -6,10 +6,8 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 module.exports = {
   entry: ['./src/js/index.js'],
   output: {
-    path: paths.output,
     filename: './js/bundle.js',
     path: path.resolve(__dirname, 'dist'),
-    publicPath: '/templates/'
   },
 
   devtool: 'source-map',

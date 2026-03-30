@@ -4,21 +4,18 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-  // Entry file
   entry: ['./src/js/index.js'],
-
-  // Output file
   output: {
+    path: paths.output,
     filename: './js/bundle.js',
-    path: path.resolve(__dirname, 'dist') // Add output path
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: '/templates/'
   },
 
-  // Source maps for easier debugging
   devtool: 'source-map',
 
   module: {
     rules: [
-      // Transpile js with babel
       {
         test: /\.js$/,
         include: path.resolve(__dirname, 'src/js'),

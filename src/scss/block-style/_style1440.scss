@@ -109,7 +109,100 @@
     display: block;
   }
 
-  @import './content/main__section';
+  .main-section {
+  width: auto;
+  height: auto;
+
+  &__title {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    gap: 24px;
+    margin-left: 32px;
+
+    .block-none:hover button {
+      opacity: 0.5;
+    }
+  }
+
+  &__highlight {
+    width: 4px;
+    height: 40px;
+    background: #41f6d7;
+    border-radius: 0 2px 2px 0;
+  }
+
+  &__title__text {
+    margin-right: auto;
+    width: 266px;
+    height: auto;
+  }
+
+  &__title__h3 {
+    @include font-size_28;
+    color: $black-name;
+  }
+
+  &__repair {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__checkstatus {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-right: 54px;
+  }
+
+  &__repair span,
+  &__checkstatus span {
+    @include font-size_16;
+    color: $black-name;
+  }
+
+  &__repair__img,
+  &__checkstatus__img {
+    width: 40px;
+    height: 40px;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    height: 60px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 32px;
+
+    button {
+      width: 233px;
+      height: 40px;
+      opacity: 1;
+      border-radius: 6px;
+      @include font-size_16;
+      color: #7e7e82;
+    }
+
+    & :hover {
+      width: 233px;
+      height: 40px;
+      display: block;
+      border: 2px solid $color-b8;
+      background: $color-f;
+    }
+
+    button + button {
+      width: 233px;
+      height: 40px;
+      opacity: 1;
+      border-radius: 6px;
+    }
+  }
+}
 
   @import './content/main-list';
 

@@ -7,12 +7,13 @@
     height: 881.78px;
     opacity: 1;
     padding-top: 0px;
-    padding-right: 29px;
+    padding-right: 0px;
     margin-left: 1px;
     top: 0;
     left: 0;
     transition: 0.5px;
     background: $color-f;
+
     .sidebar.active {
       display: block;
     }
@@ -20,6 +21,10 @@
 
   .button__burger-block {
     display: none;
+  }
+
+  .button-block {
+    margin-left: 36px;
   }
 
   .main-sidebar {
@@ -36,8 +41,8 @@
 
   .content {
     display: block;
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
     opacity: 1;
     margin-left: 0px;
     margin-top: 0px;
@@ -47,111 +52,117 @@
   }
 
   .main {
-    width: 100%;
-    height: 100%;
+    display: block;
+    width: auto;
+    height: auto;
     background: #f8f8f8;
     margin-left: 0px;
     margin-top: 0px;
-  }
 
-  .main__title,
-  .main__slide {
-    display: block;
-  }
-
-  .block-none {
-    display: none;
-  }
-
-  .main-section {
-    width: auto;
-    height: auto;
-  }
-
-  .main-section__title {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    gap: 24px;
-  }
-
-  .main-section__highlight {
-    width: 4px;
-    height: 40px;
-    background: #41f6d7;
-    border-radius: 0 2px 2px 0;
-  }
-
-  .main-section__title__text {
-    margin-right: auto;
-    width: 266px;
-    height: auto;
-  }
-
-  .main-section__title__h3 {
-    @include font-size_28;
-    color: $black-name;
-  }
-
-  .main-section__repair {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  .main-section__checkstatus {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-right: 22px;
-  }
-
-  .main-section__repair span,
-  .main-section__checkstatus span {
-    @include font-size_16;
-    color: $black-name;
-  }
-
-  .main-section__repair__img,
-  .main-section__checkstatus__img {
-    width: 40px;
-    height: 40px;
-  }
-
-  .main-section__buttons {
-    display: flex;
-    overflow-x: auto;
-    white-space: nowrap;
-    width: 100%;
-    height: 60px;
-    margin-left: 0px;
-    margin-top: 0px;
-    margin-right: 32px;
-
-    button {
-      width: 233px;
-      height: 40px;
-      opacity: 1;
-      border-radius: 6px;
-    }
-
-    .main-hover:hover {
-      width: 233px;
-      height: 40px;
+    &__title,
+    &__slide {
       display: block;
-      border: 2px solid $color-b8;
-      background: $color-f;
     }
 
-    button + button {
-      width: 215px;
-      height: 40px;
-      opacity: 1;
-      border-radius: 6px;
+    &-section {
+      width: auto;
+      height: auto;
+
+      &__title {
+        display: none;
+      }
+
+      &__repair {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      &__checkstatus {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-right: 22px;
+      }
+
+      &__repair span,
+      &__checkstatus span {
+        @include font-size_16;
+        color: $black-name;
+      }
+
+      &__repair__img,
+      &__checkstatus__img {
+        width: 40px;
+        height: 40px;
+      }
+
+      &__buttons {
+        display: flex;
+        overflow-x: auto;
+        white-space: nowrap;
+        width: auto;
+        height: 60px;
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-right: 32px;
+
+        button {
+          width: 233px;
+          height: 40px;
+          opacity: 1;
+          border-radius: 6px;
+        }
+
+        & :hover {
+          width: 233px;
+          height: 40px;
+          display: block;
+          border: 2px solid $color-b8;
+          background: $color-f;
+        }
+
+        button + button {
+          width: 215px;
+          height: 40px;
+          opacity: 1;
+          border-radius: 6px;
+        }
+      }
+    }
+  }
+
+  .main-group {
+    display: block;
+    width: auto;
+    height: 100%;
+    margin-left: 32px;
+
+    &__long__text {
+      width: auto;
+      height: auto;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0.2px;
+      color: $black-name;
+    }
+
+    &__long__text p + p {
+      display: block;
+    }
+
+    &__long__text p + p span {
+      display: block;
+    }
+
+    &__long__text p + p span + span {
+      display: none;
     }
   }
 
   @import './content/main-list';
+
   @import './content/main-cards';
 
   @import './content/main-tehnika';

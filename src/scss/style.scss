@@ -1,13 +1,19 @@
+@use './block-style/color' as *;
+@use './block-style/mixin' as *;
+
 @font-face {
-  font-family: 'TT Lakes Medium';
-  src: url('../fonts/TTLakes-Medium.ttf') format('opentype');
+  font-family: 'TT Lakes';
+  src: url('../fonts/TTLakes-Medium.ttf') format('truetype');
   font-weight: normal;
 }
 
 body {
   box-sizing: border-box;
   font-family: 'TT Lakes';
+  margin: 0;
+  padding: 0;
 }
+
 button {
   border: none;
   background: none;
@@ -16,15 +22,15 @@ button {
 .services {
   overflow: hidden;
 }
+
 .brends-slide {
   display: block;
 }
 
-@import './block-style/_color.scss';
-@import './block-style/_mixin.scss';
-@import './block-style/_style320.scss';
-@import './block-style/_style1120.scss';
-@import './block-style/_style1440.scss';
+
+@import './block-style/style320';
+@import './block-style/style1120';
+@import './block-style/style1440';
 
 @media screen and (min-width: 768px) and (max-width: 1120px) {
   .cards-group {
@@ -42,18 +48,18 @@ button {
   }
 }
 
-    @media screen and (min-width: 768px) and (max-width: 900px) {
-    .cards-group {
-      display: grid;
-      grid-template-columns: auto auto;
-      width: auto;
-      height: auto;
-      column-gap: 32px;
-      row-gap: 16px;
-      margin-left: 0px;
-      margin-top: 24px;
-    }
-    .cards-item:nth-child(n + 5) {
-      display: none;
-    }
+@media screen and (min-width: 768px) and (max-width: 900px) {
+  .cards-group {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: auto;
+    height: auto;
+    column-gap: 32px;
+    row-gap: 16px;
+    margin-left: 0px;
+    margin-top: 24px;
   }
+  .cards-item:nth-child(n + 5) {
+    display: none;
+  }
+}

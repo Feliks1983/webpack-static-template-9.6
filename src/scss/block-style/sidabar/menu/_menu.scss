@@ -2,124 +2,117 @@
   width: auto;
   height: 1810px;
   opacity: 1;
-  margin-top: 0px;
-  margin-left: 0px;
-}
 
-.menu__button {
-  display: flex;
-  align-items: center;
-  width: 276px;
-  height: 51px;
-  @include margin-left_top;
-  padding-left: 22px;
-  padding-top: 30px;
-  gap: 16px;
-}
-
-.menu__button,
-.hover:hover {
-  opacity: 0.5;
-}
-
-.menu__button,
-.hover:active {
-  opacity: 1;
-}
-
-.menu__button__group {
-  @include import-flex_center;
-  width: 96.55px;
-  height: 50.81px;
-  @include margin-left_top;
-  @include border_bg;
-}
-
-.menu__button__search {
-  @include import-flex_center;
-  @include width_height;
-  margin-left: 102px;
-  margin-top: 0px;
-  @include border_bg;
-}
-
-.menu__list {
-  display: block;
-  width: 214px;
-  height: 100%;
-  margin-top: 37.19px;
-  margin-left: 0px;
-  opacity: 1;
-  padding-bottom: 32px;
-}
-
-.menu__item {
-  @include import-flex_column;
-  width: 320px;
-  height: 364px;
-  margin-top: 0px;
-  margin-left: 24px;
-  gap: 24px;
-  @include font-size_16;
-}
-
-.menu__item__first {
-  display: flex;
-  align-items: center;
-  @include margin-left_top;
-  border-left: 4px solid $color-41f;
-  opacity: 1;
-
-  span {
-    margin-left: 24px;
-    width: 120px;
-    height: 32px;
+  &__button {
+    display: flex;
+    align-items: center;
+    width: 276px;
+    height: 51px;
+    @include margin-left_top;
+    padding-left: 22px;
+    padding-top: 30px;
+    gap: 16px;
   }
-}
 
-.menu__contact {
-  @include flex-wrap_direction;
-  width: 196px;
-  height: 124px;
-  margin-top: 0px;
-  margin-left: 24px;
-  opacity: 1;
-  gap: 16px;
-}
+  &__button,
+  .hover:hover {
+    opacity: 0.5;
+  }
 
-.menu__contact__img {
-  @include import-flex_row;
-  margin-top: 268px;
-  opacity: 1;
-  @include border_bg;
-}
+  &__button,
+  .hover:active {
+    opacity: 1;
+  }
 
-.menu__span__mail {
-  width: 106px;
-  height: 24px;
-  @include margin-left_top;
-  opacity: 1;
-  @include font-size_16;
-}
+  &__group {
+    @include import-flex_center;
+    width: 96.55px;
+    height: 50.81px;
+    @include margin-left_top;
+    @include border_bg;
+  }
 
-.menu__span__tell {
-  width: 196px;
-  height: 32px;
-  margin-top: 0px;
-  margin-left: 0px;
-  opacity: 1;
-  @include font-size_24;
-}
+  &__search {
+    @include import-flex_center;
+    @include width_height;
+    margin-left: 102px;
+    margin-top: 0px;
+    @include border_bg;
+  }
 
-.menu__lang {
-  margin-top: 40px;
-  margin-left: 24px;
-  background: $color-f;
-  opacity: 1;
-  span {
-    width: 24px;
+  &__list {
+    display: block;
+    width: 214px;
+    height: 100%;
+    margin-top: 37.19px;
+    margin-left: 24px;
+    opacity: 1;
+    padding-bottom: 32px;
+  }
+
+  &__item {
+    @include import-flex_column;
+    width: 320px;
+    height: 364px;
+    margin-top: 0px;
+    margin-left: 0px;
+    gap: 24px;
+    @include font-size_16;
+  }
+
+    .menu__item__span:hover {
+    border-left: 4px solid $color-41f;
+    opacity: 1;
+    color: #7e7e82;
+    width: 253px;
+    padding-left: 20px;
+  }
+
+  &__contact {
+    @include flex-wrap_direction;
+    width: 196px;
+    height: 124px;
+    margin-top: 0px;
+    margin-left: 0px;
+    opacity: 1;
+    gap: 16px;
+  }
+
+  &__contact__img {
+    @include import-flex_row;
+    margin-top: 268px;
+    opacity: 1;
+    @include border_bg;
+  }
+
+  &__span__mail {
+    width: 106px;
     height: 24px;
+    @include margin-left_top;
     opacity: 1;
     @include font-size_16;
+  }
+
+  &__span__tell {
+    width: 196px;
+    height: 32px;
+    margin-top: 0px;
+    margin-left: 0px;
+    opacity: 1;
+    @include font-size_24;
+  }
+
+  &__lang {
+    margin-top: 40px;
+    margin-left: 0px;
+    background: $color-f;
+    opacity: 1;
+
+    span {
+      width: 24px;
+      height: 24px;
+      opacity: 1;
+      @include font-size_16;
+    }
   }
 }

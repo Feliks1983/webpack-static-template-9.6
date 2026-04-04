@@ -1,3 +1,5 @@
+@use './color' as *;
+
 @mixin flex-justify_align {
   display: flex;
   justify-content: space-between;

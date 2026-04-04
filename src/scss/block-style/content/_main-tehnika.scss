@@ -3,102 +3,103 @@
   height: auto;
   padding-left: 32px;
   margin-top: 24px;
-}
 
-.tehnika-list {
-  width: auto;
-  height: auto;
-  margin-left: 0px;
-  margin-top: 0px;
-}
+  .tehnika-list {
+    width: auto;
+    height: auto;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
 
-.tehnika-text__title {
-  width: auto;
-  height: 56px;
-  opacity: 1;
-  margin-top: 50px;
-  border-top: 1px solid $color-d9f;
-  background: linear-gradient(to right, #F8F8F8 20%, #FFFFFF 80%);
-}
+  .tehnika-text__title {
+    width: auto;
+    height: 56px;
+    opacity: 1;
+    margin-top: 50px;
+    border-top: 1px solid $color-d9f;
+    background: linear-gradient(to right, #f8f8f8 20%, #ffffff 80%);
 
-.tehnika-text__title span {
-  width: 316px;
-  height: 24px;
-  display: flex;
-  @include font-weight_size-16;
-  text-transform: uppercase;
-  color: $color-7e;
-  padding: 16px 0px;
-}
+    & span {
+      width: 316px;
+      height: 24px;
+      display: flex;
+      @include font-weight_size-16;
+      text-transform: uppercase;
+      color: $color-7e;
+      padding: 16px 0px;
+    }
+  }
 
-.tehnika-item {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  width: auto;
-  height: auto;
-  opacity: 1;
-  @include margin-left_top;
-  gap: 32px;
-  color: $black-name;
-  margin-top: 24px;
-}
+  .tehnika-item {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: auto;
+    height: auto;
+    opacity: 1;
+    @include margin-left_top;
+    gap: 32px;
+    color: $black-name;
+    margin-top: 24px;
+  }
 
-.tehnika-block {
-  display: none;
-  width: 240px;
-  height: 160px;
-  opacity: 1;
-}
+  .tehnika-block {
+    display: none;
+    width: 240px;
+    height: 160px;
+    opacity: 1;
+  }
 
-.tehnika-a {
-  display: flex;
-  width: 240px;
-  height: 160px;
-  opacity: 1;
-  padding: 0px;
-  background: #ffffff;
-  color: $black-name;
-}
+  .tehnika-a {
+    display: flex;
+    width: 240px;
+    height: 160px;
+    opacity: 1;
+    padding: 0px;
+    background: #ffffff;
+    color: $black-name;
 
-.tehnika-a span {
-  display: flex;
-  width: 160px;
-  height: 24px;
-  opacity: 1;
-  margin-top: 16px;
-  margin-left: 16px;
-  @include font-size_16;
-}
+    & span {
+      display: flex;
+      width: 160px;
+      height: 24px;
+      opacity: 1;
+      margin-top: 16px;
+      margin-left: 16px;
+      @include font-size_16;
+    }
+  }
 
-.tehnika-go {
-  @include width_height;
-  opacity: 1;
-  margin-top: 104px;
-  margin-left: 0px;
-}
+  .tehnika-go {
+    @include width_height;
+    opacity: 1;
+    margin-top: 104px;
+    margin-left: 0px;
+  }
 
-.tehnika-readmore {
-  display: flex;
-  width: 133px;
-  height: 24px;
-  opacity: 1;
-  margin-top: 24px;
-  margin-left: 0px;
-  background: $color-f8;
-}
+  .tehnika-readmore {
+    display: flex;
+    width: 133px;
+    height: 24px;
+    opacity: 1;
+    margin-top: 24px;
+    margin-left: 0px;
+    background: $color-f8;
 
-.tehnika-readmore__img {
-  width: 24px;
-  height: 24px;
-  opacity: 1;
-  @include margin-left_top;
-}
+    &__img {
+      width: 24px;
+      height: 24px;
+      opacity: 1;
+      @include margin-left_top;
+      transform: rotate(180deg);
+    }
 
-.tehnika-readmore__text {
-  width: 101px;
-  height: 24px;
-  opacity: 1;
-  @include margin-left_top;
-  @include font-weight_size-16;
-  color: $black-name;
+    &__text {
+      width: 101px;
+      height: 24px;
+      opacity: 1;
+      @include margin-left_top;
+      @include font-weight_size-16;
+      color: $black-name;
+    }
+  }
 }

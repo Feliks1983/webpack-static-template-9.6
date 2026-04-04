@@ -6,16 +6,16 @@
   margin-top: 24px;
   border-top: 1px solid $color-d9f;
   background: linear-gradient(to right, $color-f8 20%, $color-f 80%);
-}
 
-.tehnika__text span {
-  display: flex;
-  width: auto;
-  margin-top: 16px;
-  margin-left: 16px;
-  @include font-weight_size-16;
-  text-transform: uppercase;
-  color: $color-7e;
+  & span {
+    display: flex;
+    width: auto;
+    margin-top: 16px;
+    margin-left: 16px;
+    @include font-weight_size-16;
+    text-transform: uppercase;
+    color: $color-7e;
+  }
 }
 
 .tehnika__brends {
@@ -27,14 +27,15 @@
 
 .main-tehnika {
   margin-left: 0px;
-  margin-top: 24px;
+  margin-top: 0px;
   width: auto;
   height: 280px;
 }
 
 .swiper.tehnika-swiper {
   margin-left: 16px;
-  padding-bottom: 16px !important;
+  margin-top: 0px;
+  height: 210px;
 }
 
 .swiper-wrapper.tehnika-wrapper {
@@ -67,12 +68,3 @@
   margin-left: 184px;
 }
 
-.swiper-pagination.tehnika-paginat {
-  display: block;
-  width: 204px;
-  height: 12px;
-  margin-top: 0px;
-  margin-left: 0px;
-  background: $color-f8;
-  opacity: 1;
-}

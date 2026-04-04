@@ -15,30 +15,29 @@
   margin-left: 16px;
   border-top: 1px solid $color-d9f;
   background: linear-gradient(to right, $color-f8 20%, $color-f 80%);
-}
 
-.cens-text span {
-  width: 312px;
-  height: 24px;
-  opacity: 1;
-  margin-top: 16px;
-  margin-left: 0px;
-  @include font-weight_size-16;
-  text-transform: uppercase;
-  color: $color-7e;
+  & span {
+    width: 312px;
+    height: 24px;
+    opacity: 1;
+    margin-top: 16px;
+    margin-left: 0px;
+    @include font-weight_size-16;
+    text-transform: uppercase;
+    color: $color-7e;
+  }
 }
 
 .main-cens {
   margin-top: 24px;
   width: auto;
-  height: 584px;
+  height: auto;
 }
 
 .swiper.cens-swiper {
   width: auto;
-  height: 230px;
+  height: 250px;
   margin-left: 0px;
-  padding-bottom: 16px !important;
 }
 
 .swiper-wrapper.cens-wrapper {
@@ -66,29 +65,29 @@
 
 .cens-item {
   @include import-flex_column;
-}
 
-.cens-item__group {
-  display: flex;
-  width: auto;
-  height: 38px;
-  gap: 28px;
-}
+  &__group {
+    display: flex;
+    width: auto;
+    height: 38px;
+    gap: 28px;
+  }
 
-.cens-item__list {
-  @include import-flex_column;
-  width: 81px;
-  height: 38px;
-  @include margin-left_top;
-  opacity: 1;
-}
+  &__list {
+    @include import-flex_column;
+    width: 81px;
+    height: 38px;
+    @include margin-left_top;
+    opacity: 1;
 
-.cens-item__list span + span {
-  display: flex;
-  width: 100px;
-  height: 18px;
-  @include margin-left_top;
-  opacity: 1;
+    & span + span {
+      display: flex;
+      width: 100px;
+      height: 18px;
+      @include margin-left_top;
+      opacity: 1;
+    }
+  }
 }
 
 .cens-button {
@@ -103,13 +102,4 @@
   padding-left: 12px;
   background: $color-ff3;
   color: $color-f;
-}
-
-.cens-paginat.swiper-pagination {
-  width: auto;
-  height: auto;
-  margin-top: 0px;
-  margin-left: 0px;
-  background: $color-f8;
-  opacity: 1;
 }

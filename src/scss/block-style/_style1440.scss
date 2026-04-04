@@ -19,38 +19,30 @@
     display: block;
   }
 
-  .menu__item__span:hover {
-    border-left: 4px solid $color-41f;
-    opacity: 1;
-    color: #7e7e82;
-    width: 253px;
-    padding-left: 20px;
-  }
-
   .menu__button {
     display: flex;
     align-items: center;
     width: 320px;
     height: 51px;
     @include margin-left_top;
-  }
 
-  .menu__button__group {
-    @include import-flex_center;
-    width: 96.55px;
-    height: 50.81px;
-    margin-top: 0px;
-    margin-left: 0px;
-    margin-bottom: 9.03px;
-    @include border_bg;
-  }
+    &-group {
+      @include import-flex_center;
+      width: 96.55px;
+      height: 50.81px;
+      margin-top: 0px;
+      margin-left: 0px;
+      margin-bottom: 9.03px;
+      @include border_bg;
+    }
 
-  .menu__button__search {
-    @include import-flex_center;
-    @include width_height;
-    margin-left: 102.45px;
-    margin-bottom: 16.03px;
-    @include border_bg;
+    &__search {
+      @include import-flex_center;
+      @include width_height;
+      margin-left: 86.45px;
+      margin-bottom: 16.03px;
+      @include border_bg;
+    }
   }
 
   .services {
@@ -64,6 +56,7 @@
   }
 
   @import './sidabar/menu/menu';
+
 
   .content {
     display: block;
@@ -82,16 +75,28 @@
     background: #f8f8f8;
     margin-left: 0px;
     margin-top: 0px;
-  }
 
-  .main__title,
-  .main__slide {
-    display: block;
+    &__title,
+    &__slide {
+      display: block;
+    }
   }
 
   .block-none {
     display: block;
   }
+
+    .main-group__long__text p + p {
+      display: block;
+    }
+
+    .main-group__long__text p + p span {
+      display: block;
+    }
+
+    .main-group__long__text p + p span + span {
+      display: block;
+    }
 
   @import './content/main__section';
 

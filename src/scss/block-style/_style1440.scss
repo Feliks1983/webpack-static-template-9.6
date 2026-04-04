@@ -53,17 +53,28 @@
 
   .sidebar {
     display: block !important;
+    position: fixed;
+    z-index: 1;
+    width: 320px;
+    height: auto;
+    opacity: 1;
+    padding-top: 0px;
+    padding-right: 0px;
+    margin-left: 1px;
+    top: 0;
+    left: 0;
+    transition: 0.5px;
+    background: $color-f;
   }
 
   @import './sidabar/menu/menu';
-
 
   .content {
     display: block;
     width: auto;
     height: auto;
     opacity: 1;
-    margin-left: 0px;
+    margin-left: 320px !important;
     margin-top: 0px;
     background: $color-f8;
     padding-top: 0px;
@@ -86,25 +97,346 @@
     display: block;
   }
 
-    .main-group__long__text p + p {
-      display: block;
-    }
+  .main-group__long__text p + p {
+    display: block;
+  }
 
-    .main-group__long__text p + p span {
-      display: block;
-    }
+  .main-group__long__text p + p span {
+    display: block;
+  }
 
-    .main-group__long__text p + p span + span {
-      display: block;
-    }
+  .main-group__long__text p + p span + span {
+    display: block;
+  }
 
   @import './content/main__section';
 
   @import './content/main-list';
 
-  @import './content/main-cards';
+  .main-cards {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    opacity: 1;
+    background: $color-F8;
+    margin-top: 24px;
+    margin-left: 32px;
 
-  @import './content/main-tehnika';
+    .cards__text {
+      display: flex;
+      width: auto;
+      height: 56px;
+      opacity: 1;
+      margin-top: 51px;
+      border-top: 1px solid $color-d9f;
+      background: linear-gradient(to right, #f8f8f8 20%, #ffffff 80%);
+
+      span {
+        display: flex;
+        width: auto;
+        height: 24px;
+        @include font-weight_size-16;
+        color: $color-7e;
+        text-transform: uppercase;
+        padding: 16px 0px;
+      }
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      width: auto;
+      height: auto;
+      column-gap: 32px;
+      row-gap: 16px;
+      background: $color-F8;
+      margin-left: 0px;
+      margin-top: 24px;
+
+      &__a-none {
+        display: none;
+        width: 240px;
+        height: 72px;
+        opacity: 1;
+        border-radius: 6px;
+        border: 1px solid #eaeaea;
+        background: #ffffff;
+      }
+
+      &__item {
+        display: flex;
+        width: 240px;
+        height: 72px;
+        opacity: 1;
+        border-radius: 6px;
+        border: 1px solid #eaeaea;
+        background: #ffffff;
+      }
+
+      &-lenovo {
+        width: 108px;
+        height: 32px;
+        opacity: 1;
+        margin-left: 16px;
+        margin-top: 20px;
+      }
+
+      &-lenovo__go {
+        width: 40px;
+        height: 40px;
+        opacity: 1;
+        margin-left: 60px;
+        margin-top: 16px;
+      }
+
+      &-samsung {
+        width: 116px;
+        height: 38.52px;
+        opacity: 1;
+        margin-left: 16px;
+        margin-top: 17px;
+      }
+
+      &-samsung__go {
+        width: 40px;
+        height: 40px;
+        opacity: 1;
+        margin-left: 52px;
+        margin-top: 16px;
+      }
+
+      &-aple {
+        width: 44px;
+        height: 44px;
+        opacity: 1;
+        margin-left: 16px;
+        margin-top: 12px;
+      }
+
+      &-aple__go {
+        width: 40px;
+        height: 40px;
+        opacity: 1;
+        margin-left: 124px;
+        margin-top: 16px;
+      }
+
+      &-viewsonic {
+        width: 128px;
+        height: 21px;
+        opacity: 1;
+        margin-left: 14px;
+        margin-top: 26px;
+      }
+
+      &-viewsonic__go {
+        width: 40px;
+        height: 40px;
+        opacity: 1;
+        margin-left: 42px;
+        margin-top: 16px;
+      }
+
+      &-bosh {
+        width: 128px;
+        height: 28.6px;
+        opacity: 1;
+        margin-left: 16px;
+        margin-top: 21.7px;
+      }
+
+      &-bosh__go {
+        width: 40px;
+        height: 40px;
+        opacity: 1;
+        margin-left: 40px;
+        margin-top: 16px;
+      }
+
+      &-hp {
+        width: 52px;
+        height: 52px;
+        opacity: 1;
+        margin-left: 10px;
+        margin-top: 10px;
+      }
+
+      &-hp__go {
+        width: 40px;
+        height: 40px;
+        opacity: 1;
+        margin-left: 122px;
+        margin-top: 16px;
+      }
+
+      &-acer {
+        width: 94px;
+        height: 24px;
+        opacity: 1;
+        margin-left: 16px;
+        margin-top: 24px;
+      }
+
+      &-acer__go {
+        width: 40px;
+        height: 40px;
+        opacity: 1;
+        margin-left: 74px;
+        margin-top: 16px;
+      }
+
+      &-sony {
+        width: 128px;
+        height: 25.6px;
+        opacity: 1;
+        margin-left: 14px;
+        margin-top: 23px;
+      }
+
+      &-sony__go {
+        width: 40px;
+        height: 40px;
+        opacity: 1;
+        margin-left: 42px;
+        margin-top: 16px;
+      }
+    }
+
+    .readmore {
+      display: flex;
+      width: 133px;
+      height: 24px;
+      opacity: 1;
+      margin-top: 24px;
+      margin-left: 0px;
+      background: $color-f8;
+
+      &-img {
+        width: 24px;
+        height: 24px;
+        opacity: 1;
+        @include margin-left_top;
+        transform: rotate(180deg);
+      }
+
+      &-text {
+        width: 101px;
+        height: 24px;
+        opacity: 1;
+        @include margin-left_top;
+        @include font-weight_size-16;
+        color: $black-name;
+      }
+    }
+  }
+
+  .main-tehnika {
+    width: auto;
+    height: auto;
+    padding-left: 32px;
+    margin-top: 24px;
+
+    .tehnika-list {
+      width: auto;
+      height: auto;
+      margin-left: 0px;
+      margin-top: 0px;
+    }
+
+    .tehnika-text__title {
+      display: flex;
+      width: auto;
+      height: 56px;
+      opacity: 1;
+      margin-top: 50px;
+      border-top: 1px solid $color-d9f;
+      background: linear-gradient(to right, #f8f8f8 20%, #ffffff 80%);
+
+      span {
+        width: auto;
+        height: 24px;
+        display: flex;
+        @include font-weight_size-16;
+        text-transform: uppercase;
+        color: $color-7e;
+        padding: 16px 0px;
+      }
+    }
+
+    .tehnika-item {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      width: auto;
+      height: auto;
+      opacity: 1;
+      @include margin-left_top;
+      gap: 32px;
+      color: $black-name;
+      margin-top: 24px;
+    }
+
+    .tehnika-block {
+      display: none;
+      width: 240px;
+      height: 160px;
+      opacity: 1;
+    }
+
+    .tehnika-a {
+      display: flex;
+      width: 240px;
+      height: 160px;
+      opacity: 1;
+      padding: 0px;
+      background: #ffffff;
+      color: $black-name;
+
+      & span {
+        display: flex;
+        width: 160px;
+        height: 24px;
+        opacity: 1;
+        margin-top: 16px;
+        margin-left: 16px;
+        @include font-size_16;
+      }
+    }
+
+    .tehnika-go {
+      @include width_height;
+      opacity: 1;
+      margin-top: 104px;
+      margin-left: 0px;
+    }
+
+    .tehnika-readmore {
+      display: flex;
+      width: 133px;
+      height: 24px;
+      opacity: 1;
+      margin-top: 24px;
+      margin-left: 0px;
+      background: $color-f8;
+
+      &__img {
+        width: 24px;
+        height: 24px;
+        opacity: 1;
+        @include margin-left_top;
+        transform: rotate(180deg);
+      }
+
+      &__text {
+        width: 101px;
+        height: 24px;
+        opacity: 1;
+        @include margin-left_top;
+        @include font-weight_size-16;
+        color: $black-name;
+      }
+    }
+  }
 
   @import './content/main-footer';
 }

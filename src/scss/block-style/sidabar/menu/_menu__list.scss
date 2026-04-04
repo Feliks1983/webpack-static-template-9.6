@@ -1,6 +1,6 @@
 .menu__list {
   width: 320px;
-  height: 1722px;
+  height: auto;
   margin-top: 22px;
   margin-left: 0px;
   opacity: 1;
@@ -25,21 +25,21 @@
       width: 214px;
       padding-left: 12px;
     }
-  }
 
-    .menu__item__span:hover {
-    border-left: 4px solid $color-41f;
-    opacity: 1;
-    color: #7e7e82;
-    width: 253px;
-    padding-left: 20px;
+    &__span:hover {
+      border-left: 4px solid $color-41f;
+      opacity: 1;
+      color: #7e7e82;
+      width: 253px;
+      padding-left: 20px;
+    }
   }
 
   .menu__contact {
     display: flex;
     width: 196px;
     height: 124px;
-    margin-top: 0px;
+    margin-top: auto;
     margin-left: 0px;
     opacity: 1;
 
@@ -49,7 +49,7 @@
       justify-content: center;
       width: 40px;
       height: 40px;
-      margin-top: 268px;
+      margin-top: auto;
       opacity: 1;
       @include border_bg;
     }

@@ -1,6 +1,6 @@
 .menu {
   width: auto;
-  height: 1810px;
+  height: 100vh;
   opacity: 1;
 
   &__button {
@@ -43,7 +43,7 @@
   &__list {
     display: block;
     width: 214px;
-    height: 100%;
+    height: auto;
     margin-top: 37.19px;
     margin-left: 24px;
     opacity: 1;
@@ -60,7 +60,7 @@
     @include font-size_16;
   }
 
-    .menu__item__span:hover {
+  .menu__item__span:hover {
     border-left: 4px solid $color-41f;
     opacity: 1;
     color: #7e7e82;
@@ -103,7 +103,7 @@
   }
 
   &__lang {
-    margin-top: 40px;
+    margin-top: 20px;
     margin-left: 0px;
     background: $color-f;
     opacity: 1;

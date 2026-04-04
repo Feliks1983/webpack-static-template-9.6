@@ -16,11 +16,11 @@ const content = document.querySelector('.content')
 const menuButtonBurger = document.querySelector('.menu__button__burger')
 
 burgerMenu.addEventListener('click', function () {
-  if (window.innerWidth >= 768) {
+
     sidebar.style.width = '320px'
     sidebar.style.display = 'block'
     content.style.marginLeft = '0px'
-  }
+
 })
 
 menuButtonBurger.addEventListener('click', function () {

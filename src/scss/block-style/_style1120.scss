@@ -4,7 +4,7 @@
     position: fixed;
     z-index: 1;
     width: 320px;
-    height: 881.78px;
+    height: auto;
     opacity: 1;
     padding-top: 0px;
     padding-right: 0px;
@@ -33,6 +33,10 @@
 
   .header {
     display: block;
+
+    &__icon:nth-child(10) {
+      display: none;
+    }
   }
 
   @import './sidabar/menu/menu';
@@ -64,72 +68,11 @@
       display: block;
     }
 
-    &-section {
-      width: auto;
-      height: auto;
-
-      &__title {
-        display: none;
-      }
-
-      &__repair {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-      }
-
-      &__checkstatus {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        margin-right: 22px;
-      }
-
-      &__repair span,
-      &__checkstatus span {
-        @include font-size_16;
-        color: $black-name;
-      }
-
-      &__repair__img,
-      &__checkstatus__img {
-        width: 40px;
-        height: 40px;
-      }
-
-      &__buttons {
-        display: flex;
-        overflow-x: auto;
-        white-space: nowrap;
-        width: auto;
-        height: 60px;
-        margin-left: 0px;
-        margin-top: 0px;
-        margin-right: 32px;
-
-        button {
-          width: 233px;
-          height: 40px;
-          opacity: 1;
-          border-radius: 6px;
-        }
-
-        & :hover {
-          width: 233px;
-          height: 40px;
-          display: block;
-          border: 2px solid $color-b8;
-          background: $color-f;
-        }
-
-        button + button {
-          width: 215px;
-          height: 40px;
-          opacity: 1;
-          border-radius: 6px;
-        }
-      }
+    .block-none {
+      display: none;
     }
+
+@import './content/main__section';
   }
 
   .main-group {
@@ -159,6 +102,10 @@
     &__long__text p + p span + span {
       display: none;
     }
+  }
+
+  .cards__item:nth-child(n + 7) {
+    display: none;
   }
 
   @import './content/main-list';

@@ -13,6 +13,42 @@
 
   .sidebar {
     display: none;
+    position: fixed;
+    z-index: 10;
+    width: 320px;
+    height: auto;
+    opacity: 1;
+    padding-top: 0px;
+    padding-right: 0px;
+    margin-left: 1px;
+    top: 0;
+    left: 0;
+    transition: 0.5px;
+    background: $color-f;
+
+    .sidebar.active {
+      display: block;
+    }
+  }
+
+    .button__burger-block {
+    display: none;
+  }
+
+  .button-block {
+    margin-left: 36px;
+  }
+
+  .main-sidebar {
+    display: none;
+  }
+
+  .header {
+    display: block;
+
+    &__icon:nth-child(10) {
+      display: none;
+    }
   }
 
   .menu {
@@ -85,13 +121,17 @@
     }
   }
 
-  @import './sidabar/menu/menu__list';
+    @import './sidabar/menu/menu';
+
+  @import './header';
+
 
   .main-sidebar {
     display: block;
     width: auto;
     height: 100%;
     background: $color-f8;
+
   }
 
   .main__title {
@@ -103,7 +143,7 @@
     opacity: 1;
     gap: 17px;
     margin-bottom: 24px;
-    margin-left: 0px;
+    margin-left: 16px;
   }
 
   .main__highlight {

@@ -19,8 +19,8 @@
     border-top: 1px solid $color-d9f;
     background: linear-gradient(to right, #f8f8f8 20%, #ffffff 80%);
 
-    & span {
-      width: 316px;
+    span {
+      width: auto;
       height: 24px;
       display: flex;
       @include font-weight_size-16;
@@ -32,7 +32,7 @@
 
   .tehnika-item {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto;
     width: auto;
     height: auto;
     opacity: 1;
@@ -40,6 +40,10 @@
     gap: 32px;
     color: $black-name;
     margin-top: 24px;
+
+    .tehnika-a:nth-child(4) {
+      display: none;
+    }
   }
 
   .tehnika-block {

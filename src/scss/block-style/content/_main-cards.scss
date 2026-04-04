@@ -17,7 +17,7 @@
     border-top: 1px solid $color-d9f;
     background: linear-gradient(to right, #f8f8f8 20%, #ffffff 80%);
 
-    p {
+    span {
       display: flex;
       width: auto;
       height: 24px;
@@ -30,7 +30,7 @@
 
   .cards {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto;
     width: auto;
     height: auto;
     column-gap: 32px;
@@ -57,6 +57,10 @@
       border-radius: 6px;
       border: 1px solid #eaeaea;
       background: #ffffff;
+    }
+
+    &__item:nth-child(n+7) {
+      display: none;
     }
 
     &-lenovo {

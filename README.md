@@ -1,1 +1,1 @@
-https://github.com/Feliks1983/webpack-static-template-9.6.git
+https://feliks1983.github.io/webpack-static-template-9.6/
